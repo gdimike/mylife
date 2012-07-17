@@ -1,4 +1,5 @@
 mylife
+============
 
 A set cellular automation programs, witten in Pygame.
 
@@ -8,8 +9,3 @@ A set cellular automation programs, witten in Pygame.
 "convert.py"  Convert a Life 1.06 file to a plantext (.cells) for mylife.   
 "randtile.py" Generates a random X by Y size tile for mylife.
 
-=======
-mylife
-======
-
-A set of cellular automation programs written in Python and Pygame.
