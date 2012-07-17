@@ -1,0 +1,7 @@
+#N Glider
+#O David I. Bell
+#C From the paper "HighLife - An Interesting Variant of Life".
+#C http://www.tip.net.au/~dbell/articles/HighLife.zip
+x = 3, y = 4, rule = B36/S23
+bo$2bo$3o!
+

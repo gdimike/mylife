@@ -1,0 +1,10 @@
+! replicator
+! Discoverer: Nathan Thompson
+! use highlife (B36/S23) ruleset!
+! From the paper "HighLife - An Interesting Variant of Life".
+! http://members.pcug.org.au/~dbell/
+ .OOO
+ O...
+ O...
+ O...
+

@@ -1,0 +1,3346 @@
+head	1.55;
+access;
+symbols;
+locks
+	mikey:1.55; strict;
+comment	@# @;
+
+
+1.55
+date	2009.10.28.01.39.18;	author mikey;	state Exp;
+branches;
+next	1.54;
+
+1.54
+date	2009.08.12.21.48.50;	author mikey;	state Exp;
+branches;
+next	1.53;
+
+1.53
+date	2009.08.12.20.17.50;	author mikey;	state Exp;
+branches;
+next	1.52;
+
+1.52
+date	2009.08.10.20.08.08;	author mikey;	state Exp;
+branches;
+next	1.51;
+
+1.51
+date	2009.08.10.19.54.00;	author mikey;	state Exp;
+branches;
+next	1.50;
+
+1.50
+date	2009.08.10.19.45.50;	author mikey;	state Exp;
+branches;
+next	1.49;
+
+1.49
+date	2009.08.10.19.42.52;	author mikey;	state Exp;
+branches;
+next	1.48;
+
+1.48
+date	2009.08.10.17.40.53;	author mikey;	state Exp;
+branches;
+next	1.47;
+
+1.47
+date	2009.08.10.15.43.22;	author mikey;	state Exp;
+branches;
+next	1.46;
+
+1.46
+date	2009.08.10.14.46.48;	author mikey;	state Exp;
+branches;
+next	1.45;
+
+1.45
+date	2009.08.10.14.24.29;	author mikey;	state Exp;
+branches;
+next	1.44;
+
+1.44
+date	2009.08.06.18.03.30;	author mikey;	state Exp;
+branches;
+next	1.43;
+
+1.43
+date	2009.08.06.15.08.00;	author mikey;	state Exp;
+branches;
+next	1.42;
+
+1.42
+date	2009.08.06.14.10.58;	author mikey;	state Exp;
+branches;
+next	1.41;
+
+1.41
+date	2009.08.05.02.24.55;	author mikey;	state Exp;
+branches;
+next	1.40;
+
+1.40
+date	2009.08.04.17.49.26;	author mikey;	state Exp;
+branches;
+next	1.39;
+
+1.39
+date	2009.08.04.15.50.41;	author mikey;	state Exp;
+branches;
+next	1.38;
+
+1.38
+date	2009.08.04.14.54.08;	author mikey;	state Exp;
+branches;
+next	1.37;
+
+1.37
+date	2009.08.04.14.45.53;	author mikey;	state Exp;
+branches;
+next	1.36;
+
+1.36
+date	2009.08.04.14.18.21;	author mikey;	state Exp;
+branches;
+next	1.35;
+
+1.35
+date	2009.08.02.17.44.11;	author mikey;	state Exp;
+branches;
+next	1.34;
+
+1.34
+date	2009.08.02.16.09.13;	author mikey;	state Exp;
+branches;
+next	1.33;
+
+1.33
+date	2009.08.02.15.48.42;	author mikey;	state Exp;
+branches;
+next	1.32;
+
+1.32
+date	2009.07.31.23.41.29;	author mikey;	state Exp;
+branches;
+next	1.31;
+
+1.31
+date	2009.07.31.21.42.25;	author mikey;	state Exp;
+branches;
+next	1.30;
+
+1.30
+date	2009.07.31.21.34.42;	author mikey;	state Exp;
+branches;
+next	1.29;
+
+1.29
+date	2009.07.31.18.38.02;	author mikey;	state Exp;
+branches;
+next	1.28;
+
+1.28
+date	2009.07.31.18.21.17;	author mikey;	state Exp;
+branches;
+next	1.27;
+
+1.27
+date	2009.07.31.16.57.47;	author mikey;	state Exp;
+branches;
+next	1.26;
+
+1.26
+date	2009.07.31.16.10.20;	author mikey;	state Exp;
+branches;
+next	1.25;
+
+1.25
+date	2009.07.31.15.53.29;	author mikey;	state Exp;
+branches;
+next	1.24;
+
+1.24
+date	2009.07.31.15.27.15;	author mikey;	state Exp;
+branches;
+next	1.23;
+
+1.23
+date	2009.07.29.18.07.20;	author mikey;	state Exp;
+branches;
+next	1.22;
+
+1.22
+date	2009.07.29.16.32.51;	author mikey;	state Exp;
+branches;
+next	1.21;
+
+1.21
+date	2009.07.29.15.14.03;	author mikey;	state Exp;
+branches;
+next	1.20;
+
+1.20
+date	2009.07.29.14.29.02;	author mikey;	state Exp;
+branches;
+next	1.19;
+
+1.19
+date	2009.07.27.20.23.14;	author mikey;	state Exp;
+branches;
+next	1.18;
+
+1.18
+date	2009.07.27.19.58.10;	author mikey;	state Exp;
+branches;
+next	1.17;
+
+1.17
+date	2009.07.27.19.43.54;	author mikey;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.07.27.17.53.34;	author mikey;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.07.26.01.51.52;	author mikey;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.07.25.23.52.21;	author mikey;	state Exp;
+branches
+	1.14.1.1;
+next	1.13;
+
+1.13
+date	2009.07.25.23.33.18;	author mikey;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.07.25.23.21.11;	author mikey;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.07.25.21.40.53;	author mikey;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.07.22.02.47.12;	author mikey;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.07.22.01.43.36;	author mikey;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.07.21.23.20.45;	author mikey;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.07.21.23.03.24;	author mikey;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.07.21.22.19.59;	author mikey;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.07.21.21.43.52;	author mikey;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.07.19.04.20.15;	author mikey;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.07.19.04.04.15;	author mikey;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.07.19.02.38.14;	author mikey;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.07.19.01.50.50;	author mikey;	state Exp;
+branches;
+next	;
+
+1.14.1.1
+date	2009.07.27.13.54.23;	author mikey;	state Exp;
+branches;
+next	1.14.1.2;
+
+1.14.1.2
+date	2009.07.27.14.56.55;	author mikey;	state Exp;
+branches;
+next	1.14.1.3;
+
+1.14.1.3
+date	2009.07.27.15.32.56;	author mikey;	state Exp;
+branches;
+next	;
+
+
+desc
+@Initial working version.
+@
+
+
+1.55
+log
+@Added missing sx variable.
+@
+text
+@#!/usr/bin/env python
+"""
+mylife.py
+
+An implementation of John Conway's game of life.
+
+See http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life for more
+information.
+
+Options:
+-r  start with a random cell arrangement.
+-f  filename of start cell pattern, located in the ./lifeforms directory.
+-x  initial x location of start cell pattern
+-y  initial y location of start cell pattern
+
+Michael Goldberg Sat Jul 18 20:23:43 CDT 2009
+gdimike-at-yahoo-com
+
+Copyright (C) 2009 Michael Lee Goldberg 
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+"""
+
+__author__ = "Mike Goldberg"
+__date__ = "Jul 18 20:23:43 CDT 2009"
+__version__ = "$Id: mylife.py,v 1.54 2009/08/12 21:48:50 mikey Exp mikey $"
+
+#Import Modules
+import os, sys, pygame, random
+from pygame.locals import * #IGNORE:W06
+from optparse import OptionParser
+
+def writeDefaultConfig():
+    # open a file for output
+    try:
+        fout = open('.myliferc', "w")
+    except IOError:
+        print "Error! Cannot open file"
+        print
+        sys.exit(1)
+
+    # write a default .myliferc file
+    fout.write('# Automagically generated .myliferc configuration file.\n')
+    fout.write('# valid XRES, YRES pairs 640x480, 1024x768\n')
+
+    fout.write('XRES  1024\n')
+    fout.write('YRES  768\n')
+    fout.write('# valid BLOCK_SIZE values  4, 6, 8, 10, 12, 16, 18, 20 ... 36\n')
+    fout.write('# "best values" if XMAX % BLOCKSIZE == 0 and YMAX % BLOCKSIZE == 0.\n')
+
+    fout.write('BLOCK_SIZE  4\n')
+    fout.write('# min DELTA_T = 50\n')
+    fout.write('DELTA_T 250\n')
+
+    fout.write('#FCOLOR = foreground color\n')
+    fout.write('#BCOLOR = background color\n')
+    fout.write('FCOLOR 0   255   0\n')
+    fout.write('BCOLOR 0     0   0\n')
+
+    fout.close()
+
+def getConfig():
+    params = [''] * 6
+    try:
+        fin = open('.myliferc', "r")
+        rcfound = True
+    except IOError:
+        rcfound = False
+        print "Config file '.myliferc not found."
+        print "Using these default values:"
+        print "XRES  1024"
+        print "YRES  768"
+        print "BLOCK_SIZE  8"
+        print "DELTA_T 250"
+        print "FCOLOR 0   255 0"
+        print "BCOLOR 0   0   0"
+        params = [1024, 768, 8, 250, (0, 255, 0), (0, 0, 0)]
+        
+        print
+        print 'Writing a default .myliferc config file.'
+        writeDefaultConfig()
+
+    if rcfound: 
+        for line in fin:
+            line = line.split()
+            if line == [] or line[0] == '#':
+                pass
+            else:
+                if line[0] == 'XRES':
+                    params[0] = int(line[1])
+                elif line[0] == 'YRES':
+                    params[1] = int(line[1])
+                elif line[0] == 'BLOCK_SIZE':
+                    params[2] = int(line[1])
+                elif line[0] == 'DELTA_T':
+                    params[3] = int(line[1])
+                elif line[0] == 'FCOLOR':
+                    params[4] = (int(line[1]), int(line[2]), int(line[3]))
+                elif line[0] == 'BCOLOR':
+                    params[5] = (int(line[1]), int(line[2]), int(line[3]))
+                else:
+                    pass
+    return params
+
+class Usage(Exception):
+    def __init__(self, msg): #IGNORE:W0231
+        self.msg = msg
+
+def getData(filename, XMAX, YMAX):
+    '''
+    Input: data file for mylife
+    Output: a list of lists "matrix" of the starting pattern
+    '''
+    # open a file for input
+    try:
+        fullname = os.path.join('lifeforms', filename)
+        fin = open(fullname, "r")
+    except IOError:
+        print "file not found"
+        print
+        sys.exit(1)
+        
+    startx = XMAX / 2
+    starty = YMAX / 2
+    indata = []
+    tempdata = []
+
+    # determine file format (as far as possible) from extension
+    file_format = 'unknown'
+    if filename[-4:] == '.rle':
+        file_format = 'rle'
+        rle_string_list = []
+    if filename[-6:] == '.cells':
+        file_format = 'plaintext'
+        string_list = []
+
+
+    for line in fin:
+        if line[0] == '#' or line[0] == "!" or line == '\n': 
+            if line[1:10] == 'Life 1.05':
+                file_format = 'l105'
+            if file_format == 'l105' and line[1] == 'N':
+                pass   # "normal" Life; Conway's life
+            if file_format == 'l105' and line[1] == 'R':
+                print
+                print "Only Conway's Life (or #R 23/3) \
+                is currently supported"
+                print 
+                sys.exit(1)
+            if file_format == 'l105' and line[1] == 'P':
+                temp3 = line.split()
+                startx = int(temp3[1])
+                starty = int(temp3[2])
+                # correct location coordinates
+                startx += XMAX / 2
+                starty += YMAX / 2
+            if line[1:10] == 'Life 1.06':
+                file_format = 'l106'
+                startx = 0
+                starty = 0
+        else:
+            if file_format == 'unknown':
+                print 'Unknown file format.'
+                sys.exit(-1)
+            elif file_format == 'plaintext':
+                string_list.append(line.strip())
+            elif file_format == 'l106':
+                t = line.split()
+                x = int(t[1]) + XMAX / 2
+                y = int(t[0]) + YMAX /2
+                tempdata.append((x, y))    
+            elif file_format == 'rle':
+                if line[0] == 'x':
+                    txy = line.split()
+                    sx = txy[2]
+                    sy = txy[5]
+                    xdim =(int(sx[:-1]))
+                    ydim =(int(sy[:-1]))
+                else:
+                    rle_string_list.append(line.strip())
+            else:
+                tempdata.append(line.rstrip()) 
+
+    if file_format == 'l105':
+        # get size of figure
+        rows = len(tempdata)
+        cols = max(map(len,tempdata)) #IGNORE:W0141
+        indata = makeCA_MATRIX(cols, rows)
+        for r in range(rows):
+            for c in range(len(tempdata[r])):
+                if tempdata[r][c] == '*':
+                    indata[r][c] = 1
+                else:
+                    indata[r][c] = 0
+        print 'File read: ', filename
+        print 'Life 1.05 format file.'
+        print 'FIXME: Life 1.05 format only partially implemented.'
+
+    if file_format == 'l106':
+        indata = makeCA_MATRIX(XMAX, YMAX)
+        startx = 0
+        starty = 0
+        for point in tempdata:
+            indata[point[1]][point[0]] = 1
+        print 'File read: ', filename
+        print 'Life 1.06 format file.'
+
+    if file_format == 'rle':
+        # process rle_string list
+        startx = XMAX / 2 - xdim / 2
+        starty = YMAX / 2 - ydim / 2
+        rletemp =  ''.join(rle_string_list)
+        rle_list = rletemp.split('$')
+        rle_list[-1] = rle_list[-1][:-1]
+        # make a blank pattern
+        indata = makeCA_MATRIX(xdim, ydim)
+        trow = []
+        digits = []
+        n = 0
+        y = 0
+        for line in rle_list:
+            for char in range(len(line)):
+                if line[char] == 'b' or line[char] == 'o':
+                    if digits != []:
+                        n = int(''.join(digits))
+                    if n == 0:
+                        n = 1
+                    if line[char] == 'o':
+                        splat = 1
+                    else:
+                        splat = 0
+                    trow = trow + [splat] * n
+                    digits = []
+                    n = 0
+                else:
+                    digits.append(line[char])
+            for x in range(len(trow)):
+                indata[y][x] = trow[x]
+            trow = []
+            y += 1
+        print 'File read:', filename
+        print 'RLE format file.'
+
+    if file_format == 'plaintext':
+        rowmax = len(string_list)
+        colmax = 0
+        for col in string_list:
+            line_length = len(col)
+            if line_length > colmax:
+                colmax = line_length
+        startx -= colmax / 2
+        starty -= rowmax / 2
+        
+        fullscreen = False
+        if colmax == XMAX and rowmax == YMAX:
+            fullscreen = True
+        
+        print fullscreen
+        indata = makeCA_MATRIX(XMAX, YMAX)
+        row = 0
+        for line in string_list:
+            for col in range(len(line)):
+                if line[col] == '0' or \
+                   line[col] == 'O' or \
+                   line[col] == 'o':
+                    if fullscreen:
+                        #print row, col
+                        indata[row][col] = 1
+                    if not fullscreen:
+                        indata[row][col] = 1
+            row += 1
+        print 'File read:', filename
+        print 'Plaintext format file.'
+
+    fin.close()
+    return indata, startx, starty
+
+def loadStart(filename, x, y, XMAX, YMAX, BLOCK_SIZE):
+    blocks = []
+    ca_matrix = makeCA_MATRIX(XMAX, YMAX)
+    data, x, y = getData(filename, XMAX, YMAX)
+    ysize = len(data)
+    xsize = len(data[0])
+    for r in range(ysize):
+        for c in range(xsize):
+            if data[r][c] == 1:
+                ca_matrix[r+y][c+x] = 1
+
+    for x in range(XMAX):
+        for y in range(YMAX):
+            if ca_matrix[y][x] == 1:
+                blocks.append((x * BLOCK_SIZE, y * BLOCK_SIZE))
+                
+    return blocks, ca_matrix
+
+def randomStart(XMAX, YMAX, BLOCK_SIZE):
+    blocks = []
+    ca_matrix = makeCA_MATRIX(XMAX, YMAX)
+
+    for x in range(XMAX):
+        for y in range(YMAX):
+            pct = random.random()
+            if pct < 0.375:
+                blocks.append((x * BLOCK_SIZE, y * BLOCK_SIZE))
+                ca_matrix[y-1][x-1] = 1
+            else:
+                ca_matrix[y-1][x-1] = 0    
+    return blocks, ca_matrix
+    
+def countNeighbors(row, col, ca_matrix):
+    '''Determine the number of neighbors a cell has.'''
+    total = 0
+    try:
+        if col - 1 < 0 or row - 1 < 0:
+            pass
+        elif ca_matrix[row-1][col-1] == 1:
+            total += 1
+    except IndexError: #IGNORE:W0704
+        pass
+    
+    try:
+        if col-1 < 0:
+            pass
+        elif ca_matrix[row][col-1] == 1:
+            total += 1
+    except IndexError: #IGNORE:W0704
+        pass
+    
+    try:
+        if row-1 < 0:
+            pass
+        elif ca_matrix[row+1][col-1] == 1:
+            total += 1
+    except IndexError: #IGNORE:W0704
+        pass
+    
+    try:
+        if row-1 < 0:
+            pass
+        elif ca_matrix[row-1][col] == 1:
+            total += 1
+    except IndexError: #IGNORE:W0704
+        pass
+    
+    try:
+        if ca_matrix[row+1][col] == 1:
+            total += 1
+    except IndexError: #IGNORE:W0704
+        pass
+    
+    try:
+        if row-1 < 0:
+            pass
+        elif ca_matrix[row-1][col+1] == 1:
+            total += 1
+    except IndexError: #IGNORE:W0704
+        pass
+    
+    try:
+        if ca_matrix[row][col+1] == 1:
+            total += 1
+    except IndexError: #IGNORE:W0704
+        pass
+    
+    try:
+        if ca_matrix[row+1][col+1] == 1:
+            total += 1
+    except IndexError: #IGNORE:W0704
+        pass
+    return ca_matrix[row][col], total
+
+def cellNextgen(row, col, ca_matrix, ruleset):
+    cell, neighbors = countNeighbors(row, col, ca_matrix)
+    if cell == 0:
+        if ruleset[0][neighbors] == 1:
+            life = 1
+        else:
+            life = 0
+    elif cell == 1:
+        if ruleset[1][neighbors] == 1:
+            life = 1    
+        else:
+            life = 0
+    else:
+        life = 0
+    return life
+
+def updateCA_MATRIX(ca_matrix, XMAX, YMAX, ruleset):
+    tarray = makeCA_MATRIX(XMAX, YMAX)
+    for row in range(YMAX):
+        for col in range(XMAX):
+            tarray[row][col] = cellNextgen(row, col, ca_matrix, ruleset) 
+    return tarray
+
+def updateDisplay(ca_matrix, XMAX, YMAX, BLOCK_SIZE):
+    tblocks = []
+    for row in range(YMAX):
+        for col in range(XMAX):
+            if ca_matrix[row][col] == 1:
+                tblocks.append((col * BLOCK_SIZE, row * BLOCK_SIZE))
+    return tblocks
+
+def makeCA_MATRIX(XMAX, YMAX):
+    tmatrix = []
+    line = [0] * XMAX
+    for row in range(YMAX): #IGNORE:W0612
+        tmatrix.append(line[:]) #deep copy!
+    return tmatrix
+
+def seticon(iconname):
+    """
+    give an iconname, a bitmap sized 32x32 pixels, black (0,0,0) will 
+    be alpha channel
+    
+    the windowicon will be set to the bitmap, but the black pixels will
+    be full alpha channel
+     
+    can only be called once after pygame.init() and before somewindow =
+    pygame.display.set_mode()
+    """
+    # from an anonymous commentator to pygame docs site.
+    icon=pygame.Surface((32,32))
+    icon.set_colorkey((0,0,0))#and call that color transparant
+    rawicon=pygame.image.load(iconname)#must be 32x32, black is transparant
+    for i in range(0,32):
+        for j in range(0,32):
+            icon.set_at((i,j), rawicon.get_at((i,j)))
+    pygame.display.set_icon(icon)#set wind
+
+def getOptions():
+    parser = OptionParser()
+    parser.add_option("-f", "--file", dest="filename",
+                      help="Filename of start tile", metavar="FILE")
+    parser.add_option("-x", type="int", dest="startx", 
+                      help="Initial x location of input tile")
+    parser.add_option("-y", type="int", dest="starty", 
+                      help="Initial y location of input tile")
+    parser.add_option("-r", "--random", action="store_true", 
+                      dest = "random", default=False,
+                      help="Create a random full screen start pattern")
+    parser.add_option("-s", "--sstep", action="store_true", 
+                      dest = "sstep", default=False,
+                      help="Single step mode")
+
+    parser.add_option("-R", "--ruleset", type="string", dest="ruleset", 
+                      help="Cellular Automation rule set, e.g. B3/S23")
+    parser.add_option("-d", "--directory", action = "store_true",
+                      dest = "directory", 
+                      default = False, help = "List available lifeforms")
+
+    options, args = parser.parse_args()
+    return options, args
+
+def printLifeformsDir():
+    print 'Lifeforms available:'
+    cmd = 'ls lifeforms/*.* | sed "s/lifeforms\///"'
+    os.system(cmd)
+
+def createRuleset(rset):
+    states = [[0] * 9, [0] * 9]
+    temp = rset.split('/')
+    b_str = temp[0][1:]
+    s_str = temp[1][1:]
+
+    for digit in range(len(b_str)):
+        states[0][int(b_str[digit])] = 1
+
+    for digit in range(len(s_str)):
+        states[1][int(s_str[digit])] = 1
+
+    return states
+
+def rulesetName(rset_string):
+    ruleset_string = rset_string.upper()
+    if ruleset_string == 'B3/S23':
+        ruleset_name = "Conway's life"
+    elif ruleset_string == 'B36/S23':
+        ruleset_name = 'Highlife'
+    elif ruleset_string == "B3678/S34678":
+        ruleset_name = 'Day & Night'
+    elif ruleset_string == "B3/S012345678":
+        ruleset_name = 'Life without Death'
+    elif ruleset_string == "B1357/S1357":
+        ruleset_name = 'Replicator'
+    elif ruleset_string == "B1/S1":
+        ruleset_name = 'Gnarl'
+    elif ruleset_string == "B2/S":
+        ruleset_name = 'Seeds'
+    elif ruleset_string == "B3/S12345":
+        ruleset_name = 'Maze'
+    elif ruleset_string == "B234/S":
+        ruleset_name = 'Serviettes'
+    elif ruleset_string == "B345/S5":
+        ruleset_name = 'Long life'
+    else:
+        ruleset_name = ''
+    return ruleset_name
+
+def main():
+    """this function is called when the program starts.
+       it initializes everything it needs, then runs in
+       a loop until the function returns."""
+
+    params = getConfig()
+    XRES = params[0]
+    YRES = params[1]
+    BLOCK_SIZE  = params[2]
+    DELTA_T = params[3]
+    FCOLOR = params[4]
+    BCOLOR = params[5]
+    XMAX = XRES / BLOCK_SIZE
+    YMAX = YRES / BLOCK_SIZE
+
+    options, args = getOptions() #IGNORE:W0612
+    if options.directory:
+        printLifeformsDir()
+        sys.exit(0)
+    
+    
+    if options.ruleset == None:
+        ruleset_string = 'B3/S23' # Conway's Life
+    else:
+        ruleset_string = options.ruleset
+        ruleset_string = ruleset_string.upper()
+    ruleset = createRuleset(ruleset_string)
+
+    pygame.display.init()
+    fullname = os.path.join('data', 'glider32x32.bmp')
+    seticon(fullname)
+    os.environ['SDL_VIDEO_WINDOW_POS'] = 'center'
+    screen = pygame.display.set_mode((XRES, YRES))
+    pygame.display.set_caption('My So-Called Life')
+    pygame.mouse.set_visible(1)
+    
+    pygame.time.set_timer(USEREVENT, DELTA_T) # change state
+
+    #Create The Backgound
+    background = pygame.Surface(screen.get_size())
+    background = background.convert()
+    background.fill(BCOLOR)
+    
+    #Display The Background
+    screen.blit(background, (0, 0))
+    pygame.display.flip()
+    
+    #Prepare Game Objects
+    white_block = pygame.Surface((BLOCK_SIZE - 2, BLOCK_SIZE - 2))
+    white_block.fill(FCOLOR)
+
+    if options.random or \
+    (not options.random and options.filename == None) or \
+    options.filename == 'random.lif':
+        blocks, ca_matrix = randomStart(XMAX, YMAX, BLOCK_SIZE)
+    else:
+        try:
+            filename = options.filename
+            startx = options.startx
+            starty = options.starty
+            blocks, ca_matrix = loadStart(filename, startx, starty, XMAX, YMAX, BLOCK_SIZE)
+            #print 
+        except Usage, err:
+            print >>sys.stderr, err.msg
+            print >>sys.stderr, "for help use --help"
+            return 2
+
+    for block in blocks:
+        screen.blit(white_block,block)
+    pygame.display.flip()    
+
+    print 'Ruleset: ', ruleset_string, rulesetName(ruleset_string)
+
+    generation = 0
+    while 1:
+        if options.sstep:
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    pygame.display.quit()
+                    return
+                elif event.type == KEYDOWN and event.key == K_SPACE:
+                    ca_matrix = updateCA_MATRIX(ca_matrix, XMAX, YMAX, ruleset)
+                    blocks = updateDisplay(ca_matrix, XMAX, YMAX, BLOCK_SIZE)    
+                    screen.blit(background, (0, 0))
+                    for block in blocks:
+                        screen.blit(white_block,block)
+                    pygame.display.flip()
+                    generation += 1
+                    print 'Generation: ', generation
+                elif event.type == KEYDOWN and event.key == K_ESCAPE:
+                    pygame.display.quit()
+                    return
+                elif event.type == KEYDOWN and event.key == K_f:
+                    pygame.display.toggle_fullscreen()
+                elif event.type == KEYDOWN and event.key == K_d:
+                    printLifeformsDir()
+                elif event.type == KEYDOWN and event.key == K_s:
+                    options.sstep = False
+                elif event.type == KEYDOWN and event.key == K_w:
+                    # open a file for output
+                    try:
+                        fullname = os.path.join('lifeforms', 'snapshot.cells')
+                        fout = open(fullname, "w")
+                    except IOError:
+                        print "Error! Cannot open file"
+                        print
+                        sys.exit(1)
+                    
+                    # get program version number
+                    id_list = __version__.split()
+                    version_num = id_list[2]
+                    fout.write('! Output from mylife.py version' + \
+                    version_num + '\n')
+                    fout.write('! XMAX: ' + str(XMAX) + '\n')
+                    fout.write('! YMAX: ' + str(YMAX) + '\n')
+                    line_list = []
+                    for row in range(YMAX):
+                        for col in range(XMAX):
+                            if ca_matrix[row][col] == 1:
+                                line_list.append('0')
+                            else:
+                                line_list.append('.')
+                        line_list.append('\n')
+                        line = "".join(line_list)
+                        fout.write(line)
+                        line_list = []
+                            
+                    fout.close()
+                    print 'Screen written to file "snapshot.cells"'
+        else:
+            #Handle Input Events
+            for event in pygame.event.get():
+                if event.type == QUIT:
+                    pygame.display.quit()
+                    print generation, 'generations run.'
+                    return
+                elif event.type == USEREVENT:
+                    ca_matrix = updateCA_MATRIX(ca_matrix, XMAX, YMAX, ruleset)
+                    blocks = updateDisplay(ca_matrix, XMAX, YMAX, BLOCK_SIZE)    
+                    for block in blocks:
+                        screen.blit(white_block,block)
+                elif event.type == KEYDOWN and event.key == K_ESCAPE:
+                    pygame.display.quit()
+                    print generation, 'generations run.'
+                    return
+                elif event.type == KEYDOWN and event.key == K_d:
+                    printLifeformsDir()
+                elif event.type == KEYDOWN and event.key == K_s:
+                    options.sstep = True
+
+            #Draw Everything
+            generation += 1
+            screen.blit(background, (0, 0))
+            for block in blocks:
+                screen.blit(white_block,block)
+            pygame.display.flip()
+
+if __name__ == '__main__': 
+    main()
+@
+
+
+1.54
+log
+@Inserted licensing information. (GPL 3 or later.)
+@
+text
+@d36 1
+a36 1
+__author__= "Mike Goldberg"
+d38 1
+a38 1
+__version__ = "$Id: mylife.py,v 1.53 2009/08/12 20:17:50 mikey Exp mikey $"
+d41 2
+a42 2
+import os, sys, pygame, random, SocketServer
+from pygame.locals import *
+a47 2
+        #fullname = os.path.join('lifeforms', 'snapshot.cells')
+        #fullname = os.path.join('lifeforms', 'snapshot.cells')
+d118 1
+a118 1
+    def __init__(self, msg):
+d121 1
+a121 1
+def getData(filename):
+d141 1
+a141 1
+    format = 'unknown'
+d143 1
+a143 1
+        format = 'rle'
+d146 1
+a146 1
+        format = 'plaintext'
+d153 2
+a154 2
+                format = 'l105'
+            if format == 'l105' and line[1] == 'N':
+d156 1
+a156 1
+            if format == 'l105' and line[1] == 'R':
+d162 1
+a162 1
+            if format == 'l105' and line[1] == 'P':
+d170 1
+a170 1
+                format = 'l106'
+d174 1
+a174 1
+            if format == 'unknown':
+d177 1
+a177 1
+            elif format == 'plaintext':
+d179 1
+a179 1
+            elif format == 'l106':
+d184 1
+a184 1
+            elif format == 'rle':
+a186 3
+                    global ruleset, ruleset_immutable
+                    if not ruleset_immutable:
+                        ruleset_string = txy[-1]
+d196 1
+a196 1
+    if format == 'l105':
+d199 1
+a199 1
+        cols = max(map(len,tempdata))
+d211 1
+a211 1
+    if format == 'l106':
+d220 1
+a220 1
+    if format == 'rle':
+a229 1
+        rlemode = True
+a235 1
+                    rlemode = False
+a247 1
+                    rlemode = True
+d256 1
+a256 1
+    if format == 'plaintext':
+d290 1
+a290 1
+def loadStart(filename, x, y):
+d293 1
+a293 1
+    data, x, y = getData(filename)
+d308 1
+a308 1
+def randomStart():
+d313 1
+a313 1
+       for y in range(YMAX):
+d323 1
+d330 1
+a330 1
+    except IndexError:
+d332 1
+d338 1
+a338 1
+    except IndexError:
+d340 1
+d346 1
+a346 1
+    except IndexError:
+d348 1
+d354 1
+a354 1
+    except IndexError:
+d356 1
+d360 1
+a360 1
+    except IndexError:
+d362 1
+d368 1
+a368 1
+    except IndexError:
+d370 1
+d374 1
+a374 1
+    except IndexError:
+d376 1
+d380 1
+a380 1
+    except IndexError:
+d400 1
+a400 1
+def updateCA_MATRIX(ca_matrix, ruleset):
+d407 1
+a407 1
+def updateDisplay(ca_matrix):
+d416 1
+a416 1
+    tarray = []
+d418 3
+a420 3
+    for i in range(YMAX):
+        tarray.append(line[:]) #deep copy!
+    return tarray
+d511 1
+a511 1
+def main(argv=None):
+a515 7
+    #Initialize Everything
+    global XRES, YRES, BLOCK_SIZE
+    global XMAX, YMAX, SSTEP
+    global ruleset, ruleset_immutable
+    global options
+    global generation
+
+d526 1
+a526 1
+    options, args = getOptions()
+d533 1
+a533 2
+        ruleset_string = 'B3/S23'
+        ruleset_immutable = False
+a536 2
+        ruleset_immutable = True
+
+a558 1
+    clock = pygame.time.Clock()
+d565 1
+a565 1
+        blocks, ca_matrix = randomStart()
+d571 1
+a571 1
+            blocks, ca_matrix = loadStart(filename, startx, starty)
+a575 2
+            if cmd_server:
+                server.shutdown()
+a585 1
+        #clock.tick(60)
+d592 2
+a593 2
+                    ca_matrix = updateCA_MATRIX(ca_matrix, ruleset)
+                    blocks = updateDisplay(ca_matrix)    
+d610 1
+a610 1
+                     # open a file for output
+d648 2
+a649 2
+                    ca_matrix = updateCA_MATRIX(ca_matrix, ruleset)
+                    blocks = updateDisplay(ca_matrix)    
+@
+
+
+1.53
+log
+@Added code to automagically generate a .myliferc if one is not present.
+@
+text
+@a15 3
+Morphed from the chimp.py demo program provided with the pygame 
+documentation. 
+
+d19 14
+a32 2
+This code is under the GNU public license, the version of GPL is
+your choice.
+a33 1
+copyleft 2009 Blue Sun Collective Farm
+d38 1
+a38 1
+__version__ = "$Id: mylife.py,v 1.52 2009/08/10 20:08:08 mikey Exp mikey $"
+@
+
+
+1.52
+log
+@Added toggle fullscreen mode. (For X11 only!)
+Program must be in single step mode.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.51 2009/08/10 19:54:00 mikey Exp mikey $"
+d37 31
+d84 4
+a277 3
+                    #try:
+                    #print fullscreen
+                    #print not fullscreen
+a281 1
+                        #print row, col
+a282 5
+                    #except IndexError:
+                    #    print 'IndexError'
+                    #    print 'row = ', row
+                    #    print 'col = ', col
+                    #    sys.exit(-1)
+a287 1
+    #print startx, startx
+a617 1
+                        #fullname = os.path.join('lifeforms', 'snapshot.cells')
+a640 1
+                        #print line
+a643 8
+                    #count = 0
+                    #for block in blocks:
+                    #    x = block[0] / (BLOCK_SIZE) - (XMAX / 2) 
+                    #    y = block[1] / (BLOCK_SIZE) - (YMAX / 2)  
+                    #    templine = [str(x), ' ', str(y), '\n']
+                    #    line = "".join(templine)
+                    #    fout.write(line)
+                    #    count += 1
+@
+
+
+1.51
+log
+@Removed clock.tick(60) statement. Not needed, and causes problems with smaller DELTA_T values.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.50 2009/08/10 19:45:50 mikey Exp mikey $"
+d419 1
+a419 1
+                      help="Create a random start pattern")
+d584 2
+@
+
+
+1.50
+log
+@Corrected info output: 'Screen written to file "snapshot.cells"'.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.48 2009/08/10 17:40:53 mikey Exp mikey $"
+d566 1
+a566 1
+        clock.tick(60)
+@
+
+
+1.49
+log
+@Fixed plaintext file read error.
+@
+text
+@d591 1
+a591 1
+                        #fullname = os.path.join('lifeforms', 'snapshot.lif')
+d628 1
+a628 1
+                    print 'Screen written to file "snapshot.lif"'
+@
+
+
+1.48
+log
+@1. Changed write to file to output to a plaintext (.cells) format file.
+2. Fixed IndexError bug in snapshot.cells input.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.47 2009/08/10 15:43:22 mikey Exp mikey $"
+d230 7
+a236 2
+
+        indata = makeCA_MATRIX(colmax, rowmax)
+d240 11
+a250 2
+                if line[col] == '0':
+                    try:
+d252 5
+a256 5
+                    except IndexError:
+                        print 'IndexError'
+                        print 'row = ', row
+                        print 'col = ', col
+                        sys.exit(-1)
+d262 1
+@
+
+
+1.47
+log
+@1. Cleaned up code. Fixed the x, y, row, col matrix confusion.
+makeCA_MATIX(col_max, row_max)
+               "x"      "y"
+Any cell in the ca_matrix is accessed by ca_matrix[row][col].
+                                                    y    x
+2. Removed the socket server code, which seemed to be causing problems
+(program would not exit, leavinf python running after killing mylife.py.)
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.46 2009/08/10 14:46:48 mikey Exp mikey $"
+a227 2
+        
+        # adjust starting position
+d231 1
+a231 1
+        indata = makeCA_MATRIX(rowmax, colmax)
+d235 8
+a242 2
+                if line[col] != '.':
+                    indata[row][col] = 1
+a499 1
+    print ruleset
+a573 1
+                    print 'Screen written to file "snapshot.lif"'
+d576 2
+a577 1
+                        fullname = os.path.join('lifeforms', 'snapshot.lif')
+d583 18
+a600 8
+                                
+                    fout.write('#Life 1.06\n')
+                    count = 0
+                    for block in blocks:
+                        x = block[0] / (BLOCK_SIZE) - XMAX / 2
+                        y = block[1] / (BLOCK_SIZE) - YMAX / 2
+                        templine = [str(x), ' ', str(y), '\n']
+                        line = "".join(templine)
+d602 10
+a611 1
+                        count += 1
+d613 1
+@
+
+
+1.46
+log
+@Removed unnecessary function: makeBlockMatrix().
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.45 2009/08/10 14:24:29 mikey Exp mikey $"
+a36 32
+class MyTCPHandler(SocketServer.BaseRequestHandler):
+    """
+    The RequestHandler class for our server.
+
+    It is instantiated once per connection to the server, and must
+    override the handle() method to implement communication to the
+    client.
+    """
+
+    def handle(self):
+        # self.request is the TCP socket connected to the client
+        self.data = self.request.recv(1024).strip()
+        print "%s wrote:" % self.client_address[0]
+        print self.data
+        # just send back the same data, but upper-cased
+        #self.request.send(self.data.upper())
+        if self.data == 'SSTEP':
+            options.sstep = not options.sstep
+            self.request.send('sstep toggle ok')
+        elif self.data == 'QUIT':
+            self.request.send('quit ok')
+            pygame.display.quit()
+#        elif self.data == 'GET_GEN':
+#            self.request.send('get generation ok\n')
+#            self.request.send(str(generation))
+        else:
+            self.request.send(self.data + ': unknown command')
+
+    def handle_timeout(self):
+        pass
+
+
+d140 2
+a141 2
+                x = int(t[1]) + YMAX / 2
+                y = int(t[0]) + XMAX /2
+d148 1
+a148 1
+                        ruleset = txy[-1]
+d160 4
+a163 4
+        yd = len(tempdata)
+        xd = max(map(len,tempdata))
+        indata = makeCA_MATRIX(yd, xd)
+        for r in range(len(tempdata)):
+d174 1
+a174 1
+        indata = makeCA_MATRIX(YMAX, XMAX)
+d178 1
+a178 1
+            indata[point[0]][point[1]] = 1
+d190 1
+a190 1
+        indata = makeCA_MATRIX(ydim, xdim)
+d255 1
+a255 1
+                ca_matrix[c+x][r+y] = 1
+d259 1
+a259 1
+            if ca_matrix[x][y] == 1:
+d273 1
+a273 1
+                ca_matrix[x-1][y-1] = 1
+d275 1
+a275 1
+                ca_matrix[x-1][y-1] = 0    
+d278 1
+a278 1
+def countNeighbors(x, y, ca_matrix):
+d281 1
+a281 1
+        if x-1 < 0 or y-1 < 0:
+d283 1
+a283 1
+        elif ca_matrix[x-1][y-1] == 1:
+d288 1
+a288 1
+        if x-1 < 0:
+d290 1
+a290 1
+        elif ca_matrix[x-1][y] == 1:
+d295 1
+a295 1
+        if x-1 < 0:
+d297 1
+a297 1
+        elif ca_matrix[x-1][y+1] == 1:
+d302 1
+a302 1
+        if y-1 < 0:
+d304 1
+a304 1
+        elif ca_matrix[x][y-1] == 1:
+d309 1
+a309 1
+        if ca_matrix[x][y+1] == 1:
+d314 1
+a314 1
+        if y-1 < 0:
+d316 1
+a316 1
+        elif ca_matrix[x+1][y-1] == 1:
+d321 1
+a321 1
+        if ca_matrix[x+1][y] == 1:
+d326 1
+a326 1
+        if ca_matrix[x+1][y+1] == 1:
+d330 1
+a330 1
+    return ca_matrix[x][y], total
+d332 2
+a333 2
+def cellNextgen(x, y, ca_matrix, ruleset):
+    cell, neighbors = countNeighbors(x, y, ca_matrix)
+d348 1
+a348 1
+def updateCA_MATRIX(XMAX, YMAX, ca_matrix, ruleset):
+d350 3
+a352 3
+    for x in range(XMAX):
+        for y in range(YMAX):
+            tarray[x][y] = cellNextgen(x,y, ca_matrix, ruleset) 
+d357 4
+a360 4
+    for x in range(XMAX):
+        for y in range(YMAX):
+            if ca_matrix[x][y] == 1:
+                tblocks.append((x * BLOCK_SIZE,y * BLOCK_SIZE))
+d365 2
+a366 2
+    line = [0] * YMAX
+    for i in range(XMAX):
+a369 12
+#def makeBlockMatrix(XMAX, YMAX):
+#    tarray = []
+#    line = [None] * YMAX
+#    for i in range(XMAX):
+#        tarray.append(line[:]) #deep copy!
+
+#    for x in range(XMAX):
+#        for y in range(YMAX):
+#            tarray[x][y] = Block(x * BLOCK_SIZE, y * BLOCK_SIZE)
+
+#    return tarray
+
+d496 1
+a499 1
+    #fullname = os.path.join('data', 'python32x32.bmp')
+a545 10
+    try:
+        # Create the server, binding to localhost on port 50007
+        HOST, PORT = "localhost",  50007
+        server = SocketServer.TCPServer((HOST, PORT), MyTCPHandler)
+        server.timeout = 0.01
+        cmd_server = True
+    except:
+        print "Socket not available."
+        cmd_server = False
+
+a548 2
+        if cmd_server:
+            server.handle_request() 
+a551 2
+                    if cmd_server:
+                        server.shutdown()
+d555 1
+a555 1
+                    ca_matrix = updateCA_MATRIX(XMAX, YMAX, ca_matrix, ruleset)
+a563 2
+                    if cmd_server:
+                        server.shutdown()
+d599 1
+a599 1
+                    ca_matrix = updateCA_MATRIX(XMAX, YMAX, ca_matrix, ruleset)
+@
+
+
+1.45
+log
+@Cleaned up getData() function.
+Adjested start location of plaintext (.cells) towards the center.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.44 2009/08/06 18:03:30 mikey Exp mikey $"
+d402 9
+a410 5
+def makeBlockMatrix(XMAX, YMAX):
+    tarray = []
+    line = [None] * YMAX
+    for i in range(XMAX):
+        tarray.append(line[:]) #deep copy!
+d412 1
+a412 5
+    for x in range(XMAX):
+        for y in range(YMAX):
+            tarray[x][y] = Block(x * BLOCK_SIZE, y * BLOCK_SIZE)
+
+    return tarray
+@
+
+
+1.44
+log
+@Fixed proglem with snaphot input.
+Check for problems with row and column transposition.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.43 2009/08/06 15:08:00 mikey Exp mikey $"
+d126 2
+d130 2
+a132 2
+    startx = XMAX / 2
+    starty = YMAX / 2
+a135 1
+
+d140 1
+d142 2
+a143 4
+        if line[0] == '#' or line[0] == "!" or line == '\n': # filter out 
+            if line == '\n':
+                pass
+            elif line[1:10] == 'Life 1.05':
+d145 1
+a145 1
+            elif format == 'l105' and line[1] == 'N':
+d147 1
+a147 1
+            elif format == 'l105' and line[1] == 'R':
+d153 1
+a153 1
+            elif format == 'l105' and line[1] == 'P':
+d160 1
+a160 1
+            elif line[1:10] == 'Life 1.06':
+a163 6
+            elif format == 'rle' and line[0] == '#':
+                pass
+            elif format == 'plaintext' and line[0] == "!":
+                pass
+            else:
+                pass
+a169 1
+
+d260 4
+@
+
+
+1.43
+log
+@Added code to run even if socket is unavailable.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.42 2009/08/06 14:10:58 mikey Exp mikey $"
+d213 1
+a213 1
+        indata = makeCA_MATRIX(XMAX, YMAX)
+@
+
+
+1.42
+log
+@Socket server implemented so program can accept instructions from an
+external source.
+Commands implemented that work:
+SSTEP toggle single step mode
+QUIT  exit the program
+
+GET_GEN sometimes returns the currnet generation FIXME
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.41 2009/08/05 02:24:55 mikey Exp mikey $"
+d59 3
+a61 3
+        elif self.data == 'GET_GEN':
+            self.request.send('get generation ok\n')
+            self.request.send(str(generation))
+d583 2
+a584 1
+            server.shutdown()
+d593 9
+a601 9
+    # socket server code
+    HOST, PORT = "localhost",  50007
+    # Create the server, binding to localhost on port 9999
+    server = SocketServer.TCPServer((HOST, PORT), MyTCPHandler)
+    server.timeout = 0.01
+    # Activate the server; this will keep running until you
+    # interrupt the program with Ctrl-C
+    server.handle_request() 
+
+d606 2
+a607 1
+        server.handle_request() 
+d611 2
+a612 1
+                    server.shutdown()
+d625 2
+a626 1
+                    server.shutdown()
+@
+
+
+1.41
+log
+@Changed the program icon from the Python logo to a glider icon.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.40 2009/08/04 17:49:26 mikey Exp mikey $"
+d33 1
+a33 1
+import os, sys, pygame, random
+d37 32
+a187 8
+                    #valid_rulesets = ['B3/S23', 'B36/S23' ]
+                    #if ruleset not in valid_rulesets:
+                    #    print 'Error: Unknown ruleset.'
+                    #    print 'Currently implemented rulesets:'
+                    #    print "B3/S23 (Conway's life)"
+                    #    print "B36/23 (Highlife)"
+                    #    print "currently implemented."
+                    #    sys.exit(-1)
+d510 1
+a510 1
+    
+d515 2
+d583 1
+d592 10
+d605 1
+d609 1
+d622 1
+@
+
+
+1.40
+log
+@Fixed rle file input bug.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.39 2009/08/04 15:50:41 mikey Exp mikey $"
+d519 2
+a520 1
+    fullname = os.path.join('data', 'python32x32.bmp')
+@
+
+
+1.39
+log
+@Added some names to rulesetName(rset_string) function.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.35 2009/08/02 17:44:11 mikey Exp mikey $"
+d156 8
+a163 8
+                    valid_rulesets = ['B3/S23', 'B36/S23' ]
+                    if ruleset not in valid_rulesets:
+                        print 'Error: Unknown ruleset.'
+                        print 'Currently implemented rulesets:'
+                        print "B3/S23 (Conway's life)"
+                        print "B36/23 (Highlife)"
+                        print "currently implemented."
+                        sys.exit(-1)
+@
+
+
+1.38
+log
+@Minor tweaks: make ruleset string uppercase, remove commented out code.
+@
+text
+@d462 16
+d552 1
+a552 1
+            print 
+@
+
+
+1.37
+log
+@Implemented rulesetName(string) function, which takes ina ruleset string
+and returns the popular name. (B23/S3 -> Conway's life)
+@
+text
+@d497 1
+a501 7
+    #if options.ruleset == None:
+    #    ruleset = 'B3/S23'
+    #    ruleset_immutable = False
+    #else:
+    #    ruleset = options.ruleset
+    #    ruleset_immutable = True
+
+@
+
+
+1.36
+log
+@Changed ruleset code extensively. The ruleset variable is no longer a
+string, but a data structure that can be used to apply the ruleset to
+the next generation.
+
+Now any 2D cellular atuomation ruleset can be used.
+@
+text
+@d456 10
+d552 1
+a552 1
+    print 'Ruleset: ', ruleset_string
+@
+
+
+1.35
+log
+@Implemented plaintext (*.cells) file format.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.34 2009/08/02 16:09:13 mikey Exp mikey $"
+d343 4
+a346 6
+def cellNextgen(x, y, ca_matrix):
+    live, neighbors = countNeighbors(x, y, ca_matrix)
+    if ruleset == 'B3/S23': # Conway's life
+        if live and (neighbors == 2 or neighbors == 3):
+            life = 1
+        elif not live and neighbors == 3:
+d350 3
+a352 19
+    elif ruleset == 'B36/S23': # Highlife
+        if live and (neighbors == 2 or neighbors == 3):
+            life = 1
+        elif not live and (neighbors == 3 or neighbors == 6):
+            life = 1
+        else:
+            life = 0
+    elif ruleset == 'B012345678/S3': # Life without death
+        if live: # and (neighbors == 2 or neighbors == 3):
+            life = 1
+        elif not live and neighbors == 3:
+            life = 1
+        else:
+            life = 0
+    elif ruleset == 'B12345/S3': # Maze
+        if live: # and (neighbors == 2 or neighbors == 3):
+            life = 1
+        elif not live and neighbors == 3:
+            life = 1
+d355 2
+d359 1
+a359 1
+def updateCA_MATRIX(XMAX, YMAX, ca_matrix):
+d363 1
+a363 1
+            tarray[x][y] = cellNextgen(x,y, ca_matrix) 
+d442 14
+d481 1
+d483 1
+a483 1
+        ruleset = 'B3/S23'
+d486 1
+a486 1
+        ruleset = options.ruleset
+d489 9
+d522 3
+a524 1
+    if options.random or (not options.random and options.filename == None):
+d542 1
+a542 1
+    print 'Ruleset: ', ruleset
+d553 1
+a553 1
+                    ca_matrix = updateCA_MATRIX(XMAX, YMAX, ca_matrix)
+d597 1
+a597 1
+                    ca_matrix = updateCA_MATRIX(XMAX, YMAX, ca_matrix)
+@
+
+
+1.34
+log
+@More work on alternate rulesets.
+1. Made command line option -R --ruleset trump ruleset in file.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.33 2009/08/02 15:48:42 mikey Exp mikey $"
+d103 4
+d108 1
+a108 1
+        if line[0] == '#' or line == '\n': # filter out 
+a128 1
+                #print 'l106'
+d134 2
+d142 3
+a155 1
+                    print 'getData: ', ruleset
+a173 2
+        print 'Life 1.05 format file read.'
+        print 'FIXME: Life 1.05 format only partially implemented.'
+d184 3
+a188 1
+        print 'Life 1.06 format file read.'
+d194 2
+a197 1
+        print 'RLE format file read.'
+d233 21
+a260 1
+    print 'loadStart ', ruleset
+a344 1
+    #print live
+d455 1
+a455 3
+    cmd = 'ls lifeforms/*.lif | sed "s/lifeforms\///"'
+    os.system(cmd)
+    cmd = 'ls lifeforms/*.LIF | sed "s/lifeforms\///"'
+a482 1
+    print 'options.ruleset ', options.ruleset
+d532 1
+a532 1
+    print 'main: ', ruleset
+@
+
+
+1.33
+log
+@Start of alternate rulesets implementation.
+'Highlife' (B36/23) implemented.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.32 2009/07/31 23:41:29 mikey Exp mikey $"
+d145 3
+a147 2
+                    global ruleset
+                    ruleset = txy[-1]
+d151 5
+a155 1
+                        print "Only Conway's Life (B3/S23) currently implemented."
+d441 1
+a441 1
+    global ruleset
+d461 1
+d464 1
+@
+
+
+1.32
+log
+@Changed randomStart() function so that each cell has a 37.5% chance of
+having a live cell.
+
+See Nathaniel Johnstone's blog at:
+http://www.nathanieljohnston.com/index.php/2009/07/longevity-in-conways-game-of-life-revisited/
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.31 2009/07/31 21:42:25 mikey Exp mikey $"
+d145 5
+a149 1
+                    if txy[-1] != 'B3/S23':
+d174 1
+d182 1
+d227 1
+a227 1
+
+d308 1
+a308 1
+    return total
+d311 30
+a340 7
+    neighbors = countNeighbors(x, y, ca_matrix)
+    if ca_matrix[x][y] == 1 and (neighbors == 2 or neighbors == 3):
+        life = 1
+    elif ca_matrix[x][y] == 0 and neighbors == 3:
+        life = 1
+    else:
+        life = 0
+d412 2
+d436 1
+a436 1
+
+d452 6
+d491 1
+d501 2
+@
+
+
+1.31
+log
+@Corrected output text file name to 'snapshot.lif'.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.30 2009/07/31 21:34:42 mikey Exp mikey $"
+a56 1
+            #print line
+a100 1
+        #print 'rle detected'
+a136 1
+                #indata.append(map(int,line.split()))
+a144 1
+                    #print txy
+a151 1
+                    #print xdim, ydim
+a172 1
+        #print 'indata = ',indata
+a184 1
+        #print rle_list
+a186 1
+        #print indata 
+a191 1
+        #print 'line ', y
+a192 1
+            #print line
+a197 1
+                    #print n, line[char]
+a209 1
+            #print trow
+a213 4
+            #print 'line ', y
+        #print indata
+        #sys.exit(0)                        
+
+d242 2
+a243 2
+            type = random.randrange(2)
+            if type == 0:
+a391 1
+    #cmd = 'ls ./lifeforms/*.lif'
+a417 1
+    #print options
+a421 2
+    #SSTEP = options.sstep
+
+a466 1
+            #pass
+a498 3
+                    #print ca_matrix
+                    #print 'XMAX ', len(ca_matrix), XMAX
+                    #print 'YMAX ', len(ca_matrix[0]), YMAX
+a502 3
+                        #x = block[0]
+                        #y = block[1]
+                        #print x, y
+a506 2
+                    #print 'point count = ', count
+                    #print 'blocks = ', len(blocks)
+a530 1
+            #print generation
+@
+
+
+1.30
+log
+@Finished implementing run length encoded (.rle) file input.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.29 2009/07/31 18:38:02 mikey Exp mikey $"
+d509 1
+a509 1
+                    print 'Screen written to file "screenshot.lif"'
+@
+
+
+1.29
+log
+@Removed my 'easy peasy' file format.
+Life 1.06 input & output is working well.
+Life 1.05 file input is working well enough.
+Easy peasy's main virtue is it is easy to read and parse.
+No longer needed.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.28 2009/07/31 18:21:17 mikey Exp mikey $"
+d155 1
+a155 1
+                    ydim =(int(sx[:-1]))
+d184 4
+a187 1
+        print 'RLE file input not yet implemented.'
+d191 38
+a228 2
+        print rle_list
+        sys.exit(0)                        
+d509 1
+a509 1
+                    print 'write file'
+d520 3
+a522 3
+                    print ca_matrix
+                    print 'XMAX ', len(ca_matrix), XMAX
+                    print 'YMAX ', len(ca_matrix[0]), YMAX
+d529 1
+a529 1
+                        print x, y
+d534 2
+a535 2
+                    print 'point count = ', count
+                    print 'blocks = ', len(blocks)
+@
+
+
+1.28
+log
+@Partially implemented .rle (run length encoding file format).
+.rle files are partially parsed, are not yet usable.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.27 2009/07/31 16:57:47 mikey Exp mikey $"
+d97 1
+a97 1
+    format = 'bscf'
+d136 4
+a139 2
+            if format == 'bscf':
+                indata.append(map(int,line.split()))
+@
+
+
+1.27
+log
+@Removed duplicate & incorrect getData() function!
+Since it was in the file before the correct getData() function, it was
+never execeuted.
+Bad Mike.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.26 2009/07/31 16:10:20 mikey Exp mikey $"
+d100 5
+d131 2
+d143 14
+d159 1
+a159 1
+                            
+a172 1
+    
+d181 7
+@
+
+
+1.26
+log
+@1. Added a generation counter.
+2. Removed debug print statements.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.25 2009/07/31 15:53:29 mikey Exp mikey $"
+a76 20
+def getData(filename):
+    '''
+    Input: data file for mylife
+    Output: a list of lists "matrix" of the starting pattern
+    '''
+    # open a file for input
+    try:
+        fin = open("filename", "r")
+    except IOError:
+        print "file not found"
+        print
+        sys.exit(1)
+        
+    temp = []
+    for line in f:
+        temp1 = map(toInt,data.split())
+        temp2.append(temp1)
+
+    return temp        
+
+@
+
+
+1.25
+log
+@Changed program to run with preset defaults if config file .myliferc
+is not present.
+@
+text
+@d11 4
+a14 4
+    -r  start with a random cell arrangement.
+    -f  filename of start cell pattern, located in the ./lifeforms directory.
+    -x  initial x location of start cell pattern
+    -y  initial y location of start cell pattern
+d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.24 2009/07/31 15:27:15 mikey Exp mikey $"
+d121 1
+a121 1
+        if line[0] == '#' or line == '\n': # filter out comments and newlines
+d130 2
+a131 1
+                print "Only Conway's Life (or #R 23/3) is currently supported"
+d435 1
+d451 2
+d494 1
+a500 1
+
+d503 1
+d511 2
+@
+
+
+1.24
+log
+@Fixed Life 1.06 format input and output.
+TODO: Fixme: There is a confusion in x & y coordinates.
+Figure it out and fix it.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.23 2009/07/29 18:07:20 mikey Exp mikey $"
+d41 1
+d43 1
+d45 15
+a59 21
+        print
+        sys.exit(1)
+    
+    for line in fin:
+        line = line.split()
+        #print line
+        if line == [] or line[0] == '#':
+            pass
+        else:
+            if line[0] == 'XRES':
+                params[0] = int(line[1])
+            elif line[0] == 'YRES':
+                params[1] = int(line[1])
+            elif line[0] == 'BLOCK_SIZE':
+                params[2] = int(line[1])
+            elif line[0] == 'DELTA_T':
+                params[3] = int(line[1])
+            elif line[0] == 'FCOLOR':
+                params[4] = (int(line[1]), int(line[2]), int(line[3]))
+            elif line[0] == 'BCOLOR':
+                params[5] = (int(line[1]), int(line[2]), int(line[3]))
+d61 14
+a74 1
+                pass
+d159 2
+a160 1
+        print 'Life1.05 file format only partially implemented.'
+d173 1
+a173 1
+        print 'Life 106 file format'
+@
+
+
+1.23
+log
+@Implemented a write image snapshot routine.
+While in single step mode, press the w key to write the pattern on
+the screen to a Life 106 file format (.lif) file.
+
+TODO: There are problems with both file input AND file output routines.
+File input is flipping patterns. Look at files:
+glider_106.lif
+glider_105.lif (both from Life wiki)
+glider.lif (easy peasy format)
+
+for testing.
+
+File output: use the blocks list to get the points, figure out the
+translation.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.22 2009/07/29 16:32:51 mikey Exp mikey $"
+d143 2
+a144 2
+                x = int(t[1]) + XMAX / 2
+                y = int(t[0]) + YMAX /2
+d465 2
+@
+
+
+1.22
+log
+@Life 1.06 file format input implemented.
+TODO: refactor the getData() routine -- it is getting messy due do the piecemeal way it was written.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.21 2009/07/29 15:14:03 mikey Exp mikey $"
+d446 27
+a472 1
+
+@
+
+
+1.21
+log
+@Single step option implemented.
+-s --sstep option from command line.
+While the program is running, pressing the s key toggles single step mode, and
+the space key advances to the next generation.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.20 2009/07/29 14:29:02 mikey Exp mikey $"
+d131 5
+d141 5
+d148 1
+a148 1
+                
+d150 1
+a150 1
+        print( 'Life1.05 file format only partially implemented.')
+d161 9
+@
+
+
+1.20
+log
+@Implemented foreground color FCOLOR & background color BCOLOR variables
+in the .myliferc. Foreground & background color can now be easily changed
+via .myliferc.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.19 2009/07/27 20:23:14 mikey Exp mikey $"
+d317 4
+d343 2
+a344 1
+    global XMAX, YMAX
+d357 1
+d362 2
+d407 20
+d428 25
+a452 22
+        #Handle Input Events
+        for event in pygame.event.get():
+            if event.type == QUIT:
+                pygame.display.quit()
+                return
+            elif event.type == USEREVENT:
+                ca_matrix = updateCA_MATRIX(XMAX, YMAX, ca_matrix)
+                blocks = updateDisplay(ca_matrix)    
+                for block in blocks:
+                    screen.blit(white_block,block)
+
+            elif event.type == KEYDOWN and event.key == K_ESCAPE:
+                pygame.display.quit()
+                return
+            elif event.type == KEYDOWN and event.key == K_d:
+                printLifeformsDir()
+
+        #Draw Everything
+        screen.blit(background, (0, 0))
+        for block in blocks:
+            screen.blit(white_block,block)
+        pygame.display.flip()
+@
+
+
+1.19
+log
+@Removed a bitmap loading function that is no longer needed.
+Updated the doc string.
+@
+text
+@d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.18 2009/07/27 19:58:10 mikey Exp mikey $"
+d38 1
+a38 1
+    params = [''] * 4
+d48 1
+d53 1
+a53 1
+                params[0] = line[1]
+d55 1
+a55 1
+                params[1] = line[1]
+d57 1
+a57 1
+                params[2] = line[1]
+d59 5
+a63 1
+                params[3] = line[1]
+d342 6
+a347 4
+    XRES = int(params[0])
+    YRES = int(params[1])
+    BLOCK_SIZE  = int(params[2])
+    DELTA_T = int(params[3])
+d369 1
+a369 1
+    background.fill((0, 0, 0))
+d378 1
+a378 1
+    white_block.fill((255,255,255))
+@
+
+
+1.18
+log
+@Removed superfluous configuration variables from code.
+Changed BLOCK_XSIZE and BLOCK_YSIZE to BLOCK_SIZE
+Removed references to sprite bitmaps.
+@
+text
+@d17 1
+a17 2
+documentation. The load_image() function is unchanged, as are
+parts of main.
+d30 1
+a30 1
+__version__ = "$Id: mylife.py,v 1.17 2009/07/27 19:43:54 mikey Exp mikey $"
+a54 4
+#            elif line[0] == 'BLOCK_IMAGE':
+#                params[2] = line[1]
+#            elif line[0] == 'BLANK_IMAGE':
+#                params[3] = line[1]
+a56 2
+#            elif line[0] == 'BLOCK_SIZE':
+#                params[5] = line[1]
+a62 15
+#functions to create our resources
+def load_image(name, colorkey=None):
+    fullname = os.path.join('data', name)
+    try:
+        image = pygame.image.load(fullname)
+    except pygame.error, message:
+        print 'Cannot load image:', fullname
+        raise SystemExit, message
+    image = image.convert()
+    if colorkey is not None:
+        if colorkey is -1:
+            colorkey = image.get_at((0,0))
+        image.set_colorkey(colorkey, RLEACCEL)
+    return image, image.get_rect()
+
+@
+
+
+1.17
+log
+@Changed from drawing blocks with a sprite object to blitting a rectangle.
+Looks about the same, only much faster.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.16 2009/07/27 17:53:34 mikey Exp mikey $"
+d39 1
+a39 1
+    params = [''] * 7
+d56 5
+a60 1
+            elif line[0] == 'BLOCK_IMAGE':
+d62 3
+a64 1
+            elif line[0] == 'BLANK_IMAGE':
+a65 6
+            elif line[0] == 'BLOCK_XSIZE':
+                params[4] = line[1]
+            elif line[0] == 'BLOCK_YSIZE':
+                params[5] = line[1]
+            elif line[0] == 'DELTA_T':
+                params[6] = line[1]
+d187 1
+a187 1
+                blocks.append((x * BLOCK_XSIZE, y * BLOCK_YSIZE))
+d199 1
+a199 1
+                blocks.append((x * BLOCK_XSIZE, y * BLOCK_YSIZE))
+d281 1
+a281 1
+                tblocks.append((x * BLOCK_XSIZE,y * BLOCK_YSIZE))
+d299 1
+a299 1
+            tarray[x][y] = Block(x * BLOCK_XSIZE, y * BLOCK_YSIZE)
+d355 2
+a356 2
+    global XRES, YRES, BLOCK_IMAGE, BLANK_IMAGE
+    global BLOCK_XSIZE, BLOCK_YSIZE, XMAX, YMAX
+d361 4
+a364 7
+    BLOCK_IMAGE  = params[2]
+    BLANK_IMAGE  = params[3]
+    BLOCK_XSIZE  = int(params[4])
+    BLOCK_YSIZE  = int(params[5])
+    DELTA_T = int(params[6])
+    XMAX = XRES / BLOCK_XSIZE
+    YMAX = YRES / BLOCK_YSIZE
+d392 1
+a392 1
+    white_block = pygame.Surface((BLOCK_XSIZE - 2, BLOCK_YSIZE - 2))
+@
+
+
+1.16
+log
+@This is the same as version 1.14.1.3.
+Setting the head to the working version from the branch.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.14.1.3 2009/07/27 15:32:56 mikey Exp mikey $"
+a108 19
+#classes for our game objects
+class Block(pygame.sprite.Sprite):
+    def __init__(self, x, y):
+        pygame.sprite.Sprite.__init__(self) #call Sprite initializer
+        self.image, self.rect = load_image(BLOCK_IMAGE)
+        screen = pygame.display.get_surface()
+        self.area = screen.get_rect()
+        self.x = x
+        self.y = y
+        self.rect.topleft = self.x, self.y
+        
+    def moveto(self, x, y):
+        self.x = x
+        self.y = y
+        self.rect.topleft = self.x, self.y
+
+    def getXY(self):
+        return (self.x, self.y)
+
+d187 1
+a187 1
+                blocks.append(block_matrix[x][y])
+d199 1
+a199 1
+                blocks.append(block_matrix[x][y])
+d281 1
+a281 1
+                tblocks.append(block_matrix[x][y])
+d395 2
+a396 2
+    global block_matrix, blank_matrix
+    block_matrix = makeBlockMatrix(XMAX, YMAX)
+d410 5
+a414 3
+    
+    allsprites = pygame.sprite.RenderPlain(blocks)
+    #Main Loop
+d425 4
+a428 2
+                blocks = updateDisplay(ca_matrix)
+                allsprites = pygame.sprite.RenderPlain(blocks)
+a434 2
+        allsprites.update()
+
+d437 2
+a438 1
+        allsprites.draw(screen)
+@
+
+
+1.15
+log
+@Stinkeroo! Do not use this version!
+Global configuration data now read from .myliferc file.
+Now screen resolution can be changed by editing the config file.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.14 2009/07/25 23:52:21 mikey Exp mikey $"
+a37 10
+#XRES = 640
+#YRES = 480
+#BLOCK_IMAGE = 'block4x4.bmp'
+#BLANK_IMAGE = 'blank4x4.bmp'
+#BLOCK_XSIZE = 4
+#BLOCK_YSIZE = 4
+#XMAX = 160
+#YMAX = 120
+DELTA_T = 1000
+
+d39 1
+a39 2
+    # open config file for input
+    params = [''] * 8
+a40 1
+        #fullname = os.path.join('lifeforms', filename)
+a48 1
+        #print line
+d64 2
+a67 9
+
+        
+
+    #sys.exit(1)
+    params[6] = int(params[0]) / int(params[4])
+    #XMAX = XRES / BLOCK_XSIZE
+    params[7] = int(params[1]) / int(params[5])
+    #YMAX = YRES / BLOCK_YSIZE
+
+d120 1
+a120 6
+class Blank(pygame.sprite.Sprite):
+    def __init__(self, x, y):
+        pygame.sprite.Sprite.__init__(self) #call Sprite initializer
+        self.image, self.rect = load_image(BLANK_IMAGE)
+        screen = pygame.display.get_surface()
+        self.area = screen.get_rect()
+d125 3
+a179 1
+        #print xd, yd
+a180 1
+        #print indata
+a187 1
+    #print indata
+d206 1
+a206 3
+                blocks.append(Block(x * BLOCK_XSIZE, y * BLOCK_YSIZE))
+            else:
+                blocks.append(Blank(x * BLOCK_XSIZE, y * BLOCK_YSIZE))
+d218 1
+a218 1
+                blocks.append(Block(x * BLOCK_XSIZE, y * BLOCK_YSIZE))
+a220 1
+                blocks.append(Blank(x * BLOCK_XSIZE, y * BLOCK_YSIZE))
+d300 1
+a300 3
+                tblocks.append(Block(x * BLOCK_XSIZE, y * BLOCK_YSIZE))
+            else:
+                tblocks.append(Blank(x * BLOCK_XSIZE, y * BLOCK_YSIZE))
+d310 12
+d374 13
+a392 3
+    #print params
+    #sys.exit(1)
+
+d414 3
+a416 1
+   
+d433 1
+a433 1
+        clock.tick(30)
+a457 11
+    # globals
+    params = getConfig()
+    XRES = int(params[0])
+    YRES = int(params[1])
+    BLOCK_IMAGE  = params[2]
+    BLANK_IMAGE  = params[3]
+    BLOCK_XSIZE  = int(params[4])
+    BLOCK_YSIZE  = int(params[5])
+    XMAX = XRES / BLOCK_XSIZE
+    YMAX = YRES / BLOCK_YSIZE
+
+@
+
+
+1.14
+log
+@Moved code to display the lifeforms directory out of main() and into
+a function printLifeFormsDir().
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.13 2009/07/25 23:33:18 mikey Exp mikey $"
+d38 51
+a88 6
+BLOCK_IMAGE = 'block5x5.bmp'
+BLANK_IMAGE = 'blank5x5.bmp'
+BLOCK_XSIZE = 5
+BLOCK_YSIZE = 5
+XMAX = 128
+YMAX = 96
+d398 3
+a400 1
+    #pygame.init()
+d405 1
+a405 2
+    screen = pygame.display.set_mode((640, 480))
+    #screen = pygame.display.set_mode((1000, 800))
+d409 1
+a409 1
+    pygame.time.set_timer(USEREVENT, 1000) # change state
+d439 1
+a439 1
+        clock.tick(60)
+d464 11
+@
+
+
+1.14.1.1
+log
+@Changed program to so that the sprite.__init__ method is not being
+constantly invoked.
+Now two matrices are being created, one with blank sprites and
+one with blocksprites. They hold their location on the screen
+and can be rapidly blitted.
+
+FUTURE TODO:
+Find a way to do this without creating two large arrays at start.
+Two large arrays at start = noticeable pause.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.14 2009/07/25 23:52:21 mikey Exp mikey $"
+a94 8
+    def moveto(self, x, y):
+        self.x = x
+        self.y = y
+        self.rect.topleft = self.x, self.y
+
+    def getXY(self):
+        return (self.x, self.y)
+
+a104 9
+    def moveto(self, x, y):
+        self.x = x
+        self.y = y
+        self.rect.topleft = self.x, self.y
+
+    def getXY(self):
+        return (self.x, self.y)
+
+
+d186 1
+a186 1
+                blocks.append(block_matrix[x][y])
+d188 1
+a188 1
+                blocks.append(blank_matrix[x][y])
+d200 1
+a200 1
+                blocks.append(block_matrix[x][y])
+d203 1
+a203 1
+                blocks.append(blank_matrix[x][y])
+d283 1
+a283 1
+                tblocks.append(block_matrix[x][y])
+d285 1
+a285 1
+                tblocks.append(blank_matrix[x][y])
+a294 24
+def makeBlockMatrix(XMAX, YMAX):
+    tarray = []
+    line = [None] * YMAX
+    for i in range(XMAX):
+        tarray.append(line[:]) #deep copy!
+
+    for x in range(XMAX):
+        for y in range(YMAX):
+            tarray[x][y] = Block(x * BLOCK_XSIZE, y * BLOCK_YSIZE)
+
+    return tarray
+
+def makeBlankMatrix(XMAX, YMAX):
+    tarray = []
+    line = [None] * YMAX
+    for i in range(XMAX):
+        tarray.append(line[:]) #deep copy!
+
+    for x in range(XMAX):
+        for y in range(YMAX):
+            tarray[x][y] = Blank(x * BLOCK_XSIZE, y * BLOCK_YSIZE)
+
+    return tarray
+
+d376 1
+a376 4
+    global block_matrix, blank_matrix
+    block_matrix = makeBlockMatrix(XMAX, YMAX)
+    blank_matrix = makeBlankMatrix(XMAX, YMAX)
+
+@
+
+
+1.14.1.2
+log
+@Implemented reading configuration from .myliferc file.
+Code taken and modified from stinkeroo the stinkeroo 1.15 version.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.14.1.1 2009/07/27 13:54:23 mikey Exp mikey $"
+d38 6
+a43 31
+def getConfig():
+    params = [''] * 7
+    try:
+        fin = open('.myliferc', "r")
+    except IOError:
+        print "Config file '.myliferc not found."
+        print
+        sys.exit(1)
+    
+    for line in fin:
+        line = line.split()
+        if line == [] or line[0] == '#':
+            pass
+        else:
+            if line[0] == 'XRES':
+                params[0] = line[1]
+            elif line[0] == 'YRES':
+                params[1] = line[1]
+            elif line[0] == 'BLOCK_IMAGE':
+                params[2] = line[1]
+            elif line[0] == 'BLANK_IMAGE':
+                params[3] = line[1]
+            elif line[0] == 'BLOCK_XSIZE':
+                params[4] = line[1]
+            elif line[0] == 'BLOCK_YSIZE':
+                params[5] = line[1]
+            elif line[0] == 'DELTA_T':
+                params[6] = line[1]
+            else:
+                pass
+    return params
+d174 1
+d176 1
+d184 1
+a387 13
+    global XRES, YRES, BLOCK_IMAGE, BLANK_IMAGE
+    global BLOCK_XSIZE, BLOCK_YSIZE, XMAX, YMAX
+
+    params = getConfig()
+    XRES = int(params[0])
+    YRES = int(params[1])
+    BLOCK_IMAGE  = params[2]
+    BLANK_IMAGE  = params[3]
+    BLOCK_XSIZE  = int(params[4])
+    BLOCK_YSIZE  = int(params[5])
+    DELTA_T = int(params[6])
+    XMAX = XRES / BLOCK_XSIZE
+    YMAX = YRES / BLOCK_YSIZE
+d394 1
+d399 2
+a400 1
+    screen = pygame.display.set_mode((XRES, YRES))
+d404 1
+a404 1
+    pygame.time.set_timer(USEREVENT, DELTA_T) # change state
+@
+
+
+1.14.1.3
+log
+@Removed all Blank objects from code as they were unnecessary and made
+the program run slower, especially on initialization.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.14.1.2 2009/07/27 14:56:55 mikey Exp mikey $"
+d128 19
+d226 2
+d242 1
+d323 2
+d346 12
+d452 1
+@
+
+
+1.13
+log
+@1. Changed pygame.init() to pygame.display.init(), since I'm only using
+   the display module.
+2. Added pygame.display.quit() commands to cleanly shut down pygame.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.12 2009/07/25 23:21:11 mikey Exp mikey $"
+d323 2
+a324 1
+    parser.add_option("-r", "--random", action="store_true", dest = "random", default=False,
+d326 2
+a327 1
+    parser.add_option("-d", "--directory", action = "store_true", dest = "directory", 
+d333 7
+d350 1
+a350 4
+        print 'Lifeforms available:'
+        #cmd = 'ls ./lifeforms/*.lif'
+        cmd = 'ls lifeforms/*.lif | sed "s/lifeforms\///"'
+        os.system(cmd)
+d408 1
+a408 4
+                print 'Lifeforms available:'
+                cmd = 'ls lifeforms/*.lif | sed "s/lifeforms\///"'
+                #cmd = 'ls ./lifeforms/*.lif'
+                os.system(cmd)
+@
+
+
+1.12
+log
+@Life1.05 file format partially implemented.
+(A file in that format containing one (and only one) block will be
+correctly input.)
+TODO: allow multiple block inputs.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.11 2009/07/25 21:40:53 mikey Exp mikey $"
+d347 2
+a348 1
+    pygame.init()
+d392 1
+d399 1
+@
+
+
+1.11
+log
+@1. Moved option parsing routine to a function.
+2. Started to implement Life1.05 file input routine.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.10 2009/07/22 02:47:12 mikey Exp mikey $"
+d49 1
+a49 2
+        image = pygame.image.load(fullname
+)
+a72 1
+    #temp = fin.readlines()
+a118 1
+    #temp = fin.readlines()
+d120 1
+a120 1
+    temp1 = []
+d141 1
+a141 1
+                #correct negative numbers
+d148 1
+a148 2
+                temp1 = map(int,line.split())
+                indata.append(temp1)
+d150 1
+a150 4
+                #print( 'Life1.05 file format not yet implemented.')
+                #sys.exit(0)
+                #print line
+                temp1.append(line) 
+d153 13
+a165 4
+        print( 'Life1.05 file format not yet implemented.')
+        print startx, starty
+        print temp1
+        sys.exit(1)
+d167 1
+a171 2
+    #if x == None: x = 50 # I shouldn't have to do this, right?
+    #if y == None: y = 20
+@
+
+
+1.10
+log
+@Added function to list available lifeforms.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.9 2009/07/22 01:43:36 mikey Exp mikey $"
+d122 5
+a126 1
+    temp = []
+d128 21
+a148 2
+        if line[0] == '#' or line == '\n': # filter out cooments and newlines
+            pass
+d150 15
+a164 2
+            temp1 = map(int,line.split())
+            temp.append(temp1)
+d166 1
+a166 1
+    return temp
+d169 2
+a170 2
+    if x == None: x = 50
+    if y == None: y = 20
+d172 3
+a174 2
+    ca_array = makeCA_ARRAY(XMAX, YMAX)
+    data = getData(filename)
+d180 1
+a180 1
+                ca_array[c+x][r+y] = 1
+d184 1
+a184 1
+            if ca_array[x][y] == 1:
+d189 1
+a189 1
+    return blocks, ca_array
+d193 1
+a193 1
+    ca_array = makeCA_ARRAY(XMAX, YMAX)
+d200 1
+a200 1
+                ca_array[x-1][y-1] = 1
+d203 2
+a204 2
+                ca_array[x-1][y-1] = 0    
+    return blocks, ca_array
+d206 1
+a206 1
+def countNeighbors(x, y, ca_array):
+d211 1
+a211 1
+        elif ca_array[x-1][y-1] == 1:
+d218 1
+a218 1
+        elif ca_array[x-1][y] == 1:
+d225 1
+a225 1
+        elif ca_array[x-1][y+1] == 1:
+d232 1
+a232 1
+        elif ca_array[x][y-1] == 1:
+d237 1
+a237 1
+        if ca_array[x][y+1] == 1:
+d244 1
+a244 1
+        elif ca_array[x+1][y-1] == 1:
+d249 1
+a249 1
+        if ca_array[x+1][y] == 1:
+d254 1
+a254 1
+        if ca_array[x+1][y+1] == 1:
+d260 3
+a262 3
+def cellNextgen(x, y, ca_array):
+    neighbors = countNeighbors(x, y, ca_array)
+    if ca_array[x][y] == 1 and (neighbors == 2 or neighbors == 3):
+d264 1
+a264 1
+    elif ca_array[x][y] == 0 and neighbors == 3:
+d270 2
+a271 2
+def updateCA_ARRAY(XMAX, YMAX, ca_array):
+    tarray = makeCA_ARRAY(XMAX, YMAX)
+d274 1
+a274 1
+            tarray[x][y] = cellNextgen(x,y, ca_array) 
+d277 1
+a277 1
+def updateDisplay(ca_array):
+d281 1
+a281 1
+            if ca_array[x][y] == 1:
+d287 1
+a287 1
+def makeCA_ARRAY(XMAX, YMAX):
+d314 1
+a314 6
+def main(argv=None):
+    """this function is called when the program starts.
+       it initializes everything it needs, then runs in
+       a loop until the function returns."""
+    
+    #Initialize Everything
+d318 4
+a321 2
+    parser.add_option("-x", type="int", dest="startx", help="Initial x location of input tile")
+    parser.add_option("-y", type="int", dest="starty", help="Initial y location of input tile")
+d328 9
+d338 1
+a345 2
+
+
+d370 1
+a370 1
+        blocks, ca_array = randomStart()
+d376 1
+a376 1
+            blocks, ca_array = loadStart(filename, startx, starty)
+d392 2
+a393 2
+                ca_array = updateCA_ARRAY(XMAX, YMAX, ca_array)
+                blocks = updateDisplay(ca_array)
+@
+
+
+1.9
+log
+@1. Changed code to allow comments in data files (*.lif files)
+2. Fixed empty lines in date file cause prgram to crash error.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.8 2009/07/21 23:20:45 mikey Exp mikey $"
+d290 2
+d295 7
+d326 1
+a339 1
+    
+d355 5
+@
+
+
+1.8
+log
+@Removed unnecessary debug print statements.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.7 2009/07/21 23:03:24 mikey Exp mikey $"
+d49 2
+a50 1
+        image = pygame.image.load(fullname)
+d124 5
+a128 2
+        temp1 = map(int,line.split())
+        temp.append(temp1)
+@
+
+
+1.7
+log
+@1. Changed starting background to black.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.6 2009/07/21 22:19:59 mikey Exp mikey $"
+a319 1
+            print startx, starty
+@
+
+
+1.6
+log
+@1. Change bock size to 5x5.
+2. Fix error on invoking with no options.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.5 2009/07/21 21:43:52 mikey Exp mikey $"
+d305 1
+a305 1
+    background.fill((250, 250, 250))
+d320 1
+@
+
+
+1.5
+log
+@1. Added option for loading a user defined inital cell pattern.
+2. Added command line parsing to select either random or user-defined initial cell pattern.
+@
+text
+@d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.4 2009/07/19 04:20:15 mikey Exp mikey $"
+d38 6
+a43 6
+BLOCK_IMAGE = 'block10x10.bmp'
+BLANK_IMAGE = 'blank10x10.bmp'
+BLOCK_XSIZE = 10
+BLOCK_YSIZE = 10
+XMAX = 64
+YMAX = 48
+d129 1
+a129 1
+    if x == None: x = 25
+d313 1
+a313 1
+    if options.random:
+@
+
+
+1.4
+log
+@Fix x == 0 or y == 0 (left edge / top edge) problem.
+The previous fix was not correct.
+@
+text
+@d10 6
+d31 1
+a31 1
+__version__ = "$Id: mylife.py,v 1.3 2009/07/19 04:04:15 mikey Exp mikey $"
+d36 1
+d38 6
+a43 6
+BLOCK_IMAGE = 'block20x20.bmp'
+BLANK_IMAGE = 'blank20x20.bmp'
+BLOCK_XSIZE = 20
+BLOCK_YSIZE = 20
+XMAX = 32
+YMAX = 24
+d59 13
+d73 12
+d105 14
+d120 30
+d273 1
+a273 1
+def main():
+d277 1
+d279 12
+d313 14
+a326 1
+    blocks, ca_array = randomStart()
+a327 1
+    
+d329 1
+a329 1
+    while True:
+@
+
+
+1.3
+log
+@Fixed error for cells on the x == 0 or y == 0 edge.
+Python allows negative list subscripts!
+@
+text
+@d25 1
+a25 1
+__version__ = "$Id: mylife.py,v 1.2 2009/07/19 02:38:14 mikey Exp mikey $"
+d91 6
+a96 1
+    if x-1 < 0 or y-1 < 0:
+d98 2
+a99 5
+    else:
+        try:
+            if ca_array[x-1][y-1] == 1:
+                total += 1
+        except IndexError:
+d101 6
+a106 4
+        try:
+            if ca_array[x-1][y] == 1:
+                total += 1
+        except IndexError:
+d108 6
+a113 4
+        try:
+            if ca_array[x-1][y+1] == 1:
+                total += 1
+        except IndexError:
+d115 11
+a125 24
+        try:
+            if ca_array[x][y-1] == 1:
+                total += 1
+        except IndexError:
+            pass
+        try:
+            if ca_array[x][y+1] == 1:
+                total += 1
+        except IndexError:
+            pass
+        try:
+            if ca_array[x+1][y-1] == 1:
+                total += 1
+        except IndexError:
+            pass
+        try:
+            if ca_array[x+1][y] == 1:
+                total += 1
+        except IndexError:
+            pass
+        try:
+            if ca_array[x+1][y+1] == 1:
+                total += 1
+        except IndexError:
+d127 14
+@
+
+
+1.2
+log
+@changes:
+1. Open program window in center of screen.
+2. Added a program icon.
+@
+text
+@d25 1
+a25 1
+__version__ = "$Id: mylife.py,v 1.1 2009/07/19 01:50:50 mikey Exp mikey $"
+d91 1
+a91 39
+    try:
+        if ca_array[x-1][y-1] == 1:
+            total += 1
+    except IndexError:
+        pass
+    try:
+        if ca_array[x-1][y] == 1:
+            total += 1
+    except IndexError:
+        pass
+    try:
+        if ca_array[x-1][y+1] == 1:
+            total += 1
+    except IndexError:
+        pass
+    try:
+        if ca_array[x][y-1] == 1:
+            total += 1
+    except IndexError:
+        pass
+    try:
+        if ca_array[x][y+1] == 1:
+            total += 1
+    except IndexError:
+        pass
+    try:
+        if ca_array[x+1][y-1] == 1:
+            total += 1
+    except IndexError:
+        pass
+    try:
+        if ca_array[x+1][y] == 1:
+            total += 1
+    except IndexError:
+        pass
+    try:
+        if ca_array[x+1][y+1] == 1:
+            total += 1
+    except IndexError:
+d93 41
+d172 2
+a173 1
+    give an iconname, a bitmap sized 32x32 pixels, black (0,0,0) will be alpha channel
+d175 2
+a176 1
+    the windowicon will be set to the bitmap, but the black pixels will be full alpha channel
+d178 2
+a179 1
+    can only be called once after pygame.init() and before somewindow = pygame.display.set_mode()
+d181 1
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d25 1
+a25 1
+__version__ = "$Id$"
+d167 16
+d189 3
+@

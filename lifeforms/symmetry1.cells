@@ -1,0 +1,12 @@
+! Beautiful symmetry
+! Mike Goldberg
+! Thu Aug  6 21:11:47 CDT 2009
+! Created by randtile.py
+! rows = 5
+! columns = 5
+! probability of life = 0.35
+...00
+.....
+.....
+.000.
+0..0.

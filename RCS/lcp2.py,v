@@ -1,0 +1,261 @@
+head	1.1;
+access;
+symbols;
+locks
+	mikey:1.1; strict;
+comment	@# @;
+
+
+1.1
+date	2009.08.06.15.24.31;	author mikey;	state Exp;
+branches;
+next	;
+
+
+desc
+@Changed items and layout...
+Sockets version. The only socket command sent is QUIT, which shuts
+down mylife.py.
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@#!/usr/bin/python
+"""
+lcp2.py
+
+Life control panel -- with sockets to control mylife.py
+GUI program to control mylife.py, my take on Conway's Game of Life.
+Just run the program and push the buttons.
+
+See http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life for more
+information about Conway's Life.
+
+Michael Goldberg Thu Jul 23 18:00:29 CDT 2009
+gdimike-at-yahoo-com
+
+This code is under the GNU public license, the version of GPL is
+your choice.
+
+copyleft 2009 Blue Sun Collective Farm
+"""
+
+__author__= "Mike Goldberg"
+__date__ = "Thu Jul 23 18:00:29 CDT 2009"
+__version__ = "$Id: lcp.py,v 1.9 2009/08/04 18:58:04 mikey Exp mikey $"
+
+import sys, os
+import getopt
+import string
+from Tkinter import *
+import tkFileDialog
+import tkMessageBox
+
+import socket
+
+
+class LifeControl:
+    def __init__(self, master):
+        self.stepval = IntVar()
+        self.rules = IntVar()
+        self.ruleset = StringVar()
+        self.ruleset.set('B3/S23')
+
+        self.generations = 0
+        self.gen_str = StringVar()
+        self.gen_str.set(str(self.generations))
+        #print self.gen_str
+
+        #frame3 = Frame(master)
+        #frame3.pack(side="right")
+
+        #self.label5 = Label(frame3, textvariable=self.gen_str)
+        #self.label5.pack(side='top', padx=5)
+
+        #self.label6 = Label(frame3, textvariable=self.gen_str,\
+        #width=10, bg='red')
+        #self.label6.pack(side='top')
+
+        #self.label7 = Label(frame3, text='Live cells')
+        #self.label7.pack(side='top')
+
+        #self.label8 = Label(frame3, text=0, width=10, bg='red')
+        #self.label8.pack(side='top')
+
+
+        frame1 = Frame(master)
+        frame1.pack(side="right")
+
+        # socket client
+        self.HOST, self.PORT = "localhost", 50007
+        # Create a socket (SOCK_STREAM means a TCP socket)
+        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.sock.close()
+
+        self.label9 = Label(frame1, text='Ruleset:', width=20)
+        self.label9.pack(side='top')
+
+        self.label4 = Label(frame1, textvariable=self.ruleset, fg='red')
+        self.label4.pack(side='top')
+
+        self.r3 = Radiobutton(frame1, text="B3/S23 Conway's life",width=20,\
+        variable=self.rules, value=0) 
+        self.r3.pack(side='top')
+        
+        self.r4 = Radiobutton(frame1, text="Input ruleset:           ",\
+        width=20,\
+        variable=self.rules, value=1) 
+        self.r4.pack(side='top')
+
+        self.r3.select()
+
+        self.entry1 = Entry(frame1)
+        self.entry1.pack(side='top')
+
+        self.btn5 = Button(frame1, text="Set rules", width=10,
+        command=self.retrieveRuleset, bd=3)
+        self.btn5.pack(side='top', pady=3)
+
+        self.btn3 = Button(frame1, text="Config", width=6,
+        command=self.runEditor, bd=3)
+        self.btn3.pack(side='top', pady=3)
+
+        self.btn4 = Button(frame1, text="Quit", width=6,
+        command=handler, bd=3)
+        self.btn4.pack(side='top')
+ 
+        frame2 = Frame(master)
+        frame2.pack(side="right")
+       
+        self.label2 = Label(frame2, text="Start pattern:")
+        self.label2.pack(side='top')
+
+        self.lifeform = StringVar()
+        self.lifeform.set('random')
+        self.label3 = Label(frame2, textvariable=self.lifeform, fg='red')
+        self.label3.pack(side='top')
+
+        self.btn1 = Button(frame2, text="Load", width=6,
+        command=self.choose_file, bd=3)
+        self.btn1.pack(side='top')
+
+        self.btn2 = Button(frame2, text="Run", width=6,
+        command=self.runLife,bd=3)
+        self.btn2.pack(side='top', pady=3)
+
+        self.r2 = Radiobutton(frame2, text='Continuous',width=11,\
+        variable=self.stepval, value=0) 
+        self.r2.pack(side='top')
+        self.r1 = Radiobutton(frame2, text='Single step',width=11,\
+        variable=self.stepval, value=1) 
+        self.r1.pack(side='top')
+        self.r2.select()
+
+        self.btn6 = Button(frame2, text="Kill", width=6,
+        command=self.sendQuit, bd=3)
+        self.btn6.pack(side='top', pady=3)
+
+       
+        self.label1 = Label(frame2, text='2009 mlg@@BSCF')
+        self.label1.pack(side='bottom')
+    
+
+    
+    #def showStep(self):
+    #    print self.stepval.get()
+    def sendQuit(self):
+        self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        # Connect to server and send data
+        data = 'QUIT'
+        try:
+            self.sock.connect((self.HOST, self.PORT))
+        except socket.error:
+            pass
+        self.sock.send(data)
+        # Receive data from the server and shut down
+        received = self.sock.recv(1024)
+        self.sock.close()
+
+        print "Sent:     %s" % data
+        print "Received: %s" % received
+   
+
+    #def incrGeneration(self):
+    #    self.generations += 1
+    #    self.gen_str.set(str(self.generations))
+
+    def retrieveRuleset(self):
+        if self.rules.get() == 1:
+            temp_ruleset = self.entry1.get()
+            self.ruleset.set(temp_ruleset.upper())
+        else:
+            self.ruleset.set('B3/S23')
+
+    def runEditor(self):
+        cmd = 'gedit .myliferc &' 
+        os.system(cmd)
+
+    def choose_file(self):
+        file = tkFileDialog.askopenfile(parent=root,
+        initialdir="./lifeforms", mode='rb',title='Choose file to load')
+        temp = file.name
+        temp1 = temp.split('/')
+        filename = temp1[-1]
+        self.lifeform.set(filename)
+
+    def process(self):
+        runLife(self.lifeform)
+        pass
+
+    def runLife(self):
+        if self.lifeform.get() == 'random':
+            if self.stepval.get() == 1:
+                cmd = 'python ./mylife.py -s -r -R '+\
+                self.ruleset.get() + '&'
+            else:
+                cmd = 'python ./mylife.py -r -R' + self.ruleset.get() + '&'
+        else:
+            if self.stepval.get() == 1:
+                cmd = 'python ./mylife.py -s -f ' + \
+                self.lifeform.get() + \
+                ' -R ' + self.ruleset.get() + ' &'
+                print cmd
+            else:
+                cmd = 'python ./mylife.py -f ' + \
+                self.lifeform.get() + \
+                ' -R ' + self.ruleset.get() + ' &'
+                print cmd
+        os.system(cmd)
+
+def handler():
+    if tkMessageBox.askokcancel("Quit?", "Are you sure you want to quit?"):
+        root.quit()
+
+root = Tk()
+root.geometry('305x220+20+250')
+##  make a  window that is not resizable & disable the maximize button
+root.resizable(width=FALSE, height=FALSE)
+
+# changing the default icon in a Tkinter window
+root.wm_iconbitmap("@@./data/glider.xbm")
+#root.wm_iconbitmap("@@/usr/include/X11/bitmaps/escherknot")
+
+# give the window a title
+root.title("Life Control Program")
+#root.config(bg='white')
+
+# keep a window always on top
+root.wm_attributes('-topmost', 1)
+
+root.protocol("WM_DELETE_WINDOW", handler)
+# or toplevel.protocol(...
+
+
+app = LifeControl(root)
+root.mainloop()
+
+@

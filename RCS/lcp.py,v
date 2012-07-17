@@ -1,0 +1,997 @@
+head	1.17;
+access;
+symbols;
+locks
+	mikey:1.17; strict;
+comment	@# @;
+
+
+1.17
+date	2009.08.13.01.30.49;	author mikey;	state Exp;
+branches;
+next	1.16;
+
+1.16
+date	2009.08.13.01.19.53;	author mikey;	state Exp;
+branches;
+next	1.15;
+
+1.15
+date	2009.08.12.23.28.03;	author mikey;	state Exp;
+branches;
+next	1.14;
+
+1.14
+date	2009.08.12.22.57.12;	author mikey;	state Exp;
+branches;
+next	1.13;
+
+1.13
+date	2009.08.12.21.52.06;	author mikey;	state Exp;
+branches;
+next	1.12;
+
+1.12
+date	2009.08.11.01.21.04;	author mikey;	state Exp;
+branches;
+next	1.11;
+
+1.11
+date	2009.08.11.01.17.57;	author mikey;	state Exp;
+branches;
+next	1.10;
+
+1.10
+date	2009.08.11.00.07.49;	author mikey;	state Exp;
+branches;
+next	1.9;
+
+1.9
+date	2009.08.04.18.58.04;	author mikey;	state Exp;
+branches;
+next	1.8;
+
+1.8
+date	2009.08.04.18.32.09;	author mikey;	state Exp;
+branches;
+next	1.7;
+
+1.7
+date	2009.08.04.17.32.06;	author mikey;	state Exp;
+branches;
+next	1.6;
+
+1.6
+date	2009.07.31.23.29.27;	author mikey;	state Exp;
+branches;
+next	1.5;
+
+1.5
+date	2009.07.31.23.24.16;	author mikey;	state Exp;
+branches;
+next	1.4;
+
+1.4
+date	2009.07.27.16.35.51;	author mikey;	state Exp;
+branches;
+next	1.3;
+
+1.3
+date	2009.07.27.15.19.05;	author mikey;	state Exp;
+branches;
+next	1.2;
+
+1.2
+date	2009.07.23.23.10.16;	author mikey;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2009.07.23.23.05.35;	author mikey;	state Exp;
+branches;
+next	;
+
+
+desc
+@Initial working verion.
+@
+
+
+1.17
+log
+@Made about and set rule windows non-resizeable.
+@
+text
+@#!/usr/bin/python
+"""
+lcp.py
+
+Life control panel
+GUI program to control mylife.py, my take on Conway's Game of Life.
+Just run the program and push the buttons.
+
+See http://en.wikipedia.org/wiki/Conway%27s_Game_of_Life for more
+information about Conway's Life.
+
+Michael Goldberg Thu Jul 23 18:00:29 CDT 2009
+gdimike-at-yahoo-com
+
+Copyright (C) 2009 Michael Lee Goldberg 
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+"""
+
+__author__= "Mike Goldberg"
+__date__ = "Thu Jul 23 18:00:29 CDT 2009"
+__version__ = "$Id: lcp.py,v 1.16 2009/08/13 01:19:53 mikey Exp mikey $"
+
+import sys, os
+import getopt
+import string
+from Tkinter import *
+import tkFileDialog
+import tkMessageBox
+
+class LifeControl:
+    def __init__(self, master):
+        self.stepval = IntVar()
+        self.rules = IntVar()
+        self.ruleset = StringVar()
+        self.rulesets = ["B3/S23 Conway's Life", "B36/S23 Highlife", "B3678/S34678 Day & Night", \
+        "B3/S012345678 Life Without Death", "B1357/S1357 Replicator", \
+        "B1/S1 Gnarl", "B2/S Seeds", "B3/S12345 Maze", "B234/S Serviettes", "B345/S5 Long Life"] 
+
+        self.rulesetdict = {}
+        for i in range(len(self.rulesets)):
+            temp = self.rulesets[i].split()
+            self.rulesetdict[str(i)] = temp[0]
+
+
+        self.ruleset.set('B3/S23')
+
+        menubar = Menu(root)
+
+        # create a pulldown menu, and add it to the menu bar
+        filemenu = Menu(menubar, tearoff=1)
+        filemenu.add_command(label="Load", command=self.choose_file)
+        filemenu.add_command(label="Run", command=self.runLife)
+        filemenu.add_separator()
+        filemenu.add_command(label="Exit", command=root.quit)
+        menubar.add_cascade(label="File", menu=filemenu)
+
+        configmenu = Menu(menubar, tearoff=0)
+        configmenu.add_command(label="Config", command=self.runEditor)
+        configmenu.add_command(label="Rulesets", command=self.setRuleset)
+        menubar.add_cascade(label="Config", menu=configmenu)
+
+        helpmenu = Menu(menubar, tearoff=0)
+        helpmenu.add_command(label="About", command=self.showAbout)
+        menubar.add_cascade(label="Help", menu=helpmenu)
+
+        # display the menu
+        root.config(menu=menubar, relief='flat')
+
+        self.frame1 = Frame(master, bd=4, relief='sunken')
+        self.frame1.pack()
+
+        self.label2 = Label(self.frame1, text="Start pattern",\
+        bd=5, fg='black', relief='flat')
+        self.label2.grid(row=0, column=0, sticky='e')
+
+        self.lifeform = StringVar()
+        self.lifeform.set('random')
+        self.label3 = Label(self.frame1, textvariable=self.lifeform, \
+        bg='black', fg='green', bd=5, relief='ridge', padx=3, font='courier')
+        self.label3.grid(row=0, column=1, sticky='w')
+
+        self.label4 = Label(self.frame1, text="    Ruleset ",\
+        bd=5, fg='black', relief='flat')
+        self.label4.grid(row=1,column=0, sticky='e')
+
+        self.label5 = Label(self.frame1, textvariable=self.ruleset, \
+        bg='black', fg='green', bd=5, relief='ridge', padx=3,font='courier')
+        self.label5.grid(row=1, column=1,sticky='w')
+
+
+        self.label6 = Label(self.frame1, text='Ruleset:')
+        self.label6.grid(row=2, column=0)
+
+        self.r3 = Radiobutton(self.frame1, \
+        text="B3/S23 Conway's life",width=20,\
+        variable=self.rules, value=0) 
+        self.r3.grid(row=3, column=0, sticky='e')
+         
+        self.r4 = Radiobutton(self.frame1, \
+        text="Input ruleset:           ",width=20,\
+        variable=self.rules, value=1) 
+        self.r4.grid(row=4, column=0, sticky='e')
+
+        self.r3.select()
+
+        self.entry1 = Entry(self.frame1)
+        self.entry1.grid(row=5, column=0)
+
+        self.btn5 = Button(self.frame1, text="Set rules", width=10,
+        command=self.retrieveRuleset, bd=3, pady=3)
+        self.btn5.grid(row=6, column=0)
+
+
+        self.label7 = Label(self.frame1, text='Run mode:')
+        self.label7.grid(row=2, column=1)
+
+
+        self.r1 = Radiobutton(self.frame1, text='Single step',width=11,\
+        variable=self.stepval, value=1) 
+        self.r1.grid(row=3, column=1, sticky='w')
+        self.r2 = Radiobutton(self.frame1, text='Continuous',width=11,\
+        variable=self.stepval, value=0) 
+        self.r2.grid(row=4, column=1, sticky='w')
+        self.r2.select()
+
+    def retrieveRuleset(self):
+        if self.rules.get() == 1:
+            temp_ruleset = self.entry1.get()
+            self.ruleset.set(temp_ruleset.upper())
+        else:
+            self.ruleset.set('B3/S23')
+
+    def runEditor(self):
+        cmd = 'gedit .myliferc &' 
+        os.system(cmd)
+
+    def choose_file(self):
+        file = tkFileDialog.askopenfile(parent=root,
+        initialdir="./lifeforms", mode='rb',title='Choose file to load')
+        temp = file.name
+        temp1 = temp.split('/')
+        filename = temp1[-1]
+        self.lifeform.set(filename)
+
+    def process(self):
+        runLife(self.lifeform)
+        pass
+
+    def runLife(self):
+        if self.lifeform.get() == 'random':
+            if self.stepval.get() == 1:
+                cmd = 'python ./mylife.py -s -r -R '+\
+                self.ruleset.get() + '&'
+            else:
+                cmd = 'python ./mylife.py -r -R' + self.ruleset.get() + '&'
+        else:
+            if self.stepval.get() == 1:
+                cmd = 'python ./mylife.py -s -f ' + \
+                self.lifeform.get() + \
+                ' -R ' + self.ruleset.get() + ' &'
+            else:
+                cmd = 'python ./mylife.py -f ' + \
+                self.lifeform.get() + \
+                ' -R ' + self.ruleset.get() + ' &'
+        os.system(cmd)
+
+    def showAbout(self):
+        ver_info = __version__.split()
+        pgm = ver_info[1][:-2]
+        
+        # popup code
+        about = Tk()
+        ##  make a  window that is not resizable & disable the maximize button
+        about.resizable(width=FALSE, height=FALSE)
+        # changing the default icon in a Tkinter window
+        about.wm_iconbitmap("@@./data/glider.xbm")
+        # give the window a title
+        about.title("About") 
+        
+        aframe = Frame(about)
+        aframe.pack()
+
+        infotext = pgm + '\n' + \
+        'Version ' + ver_info[2] + '\n' \
+        'GUI program to launch mylife.py.\n' + \
+        "myife.py is yet another Conway's Game of Life program.\n\n" + \
+        'lcp.py Copyright (C) 2009 Michael Lee Goldberg\n'
+
+        info = Label(aframe, text=infotext, justify=CENTER)
+        info.pack()
+
+        gnutext = "This program is free software: you can redistribute it and/or modify\n" + \
+        "it under the terms of the GNU General Public License as published by\n" + \
+        "the Free Software Foundation, either version 3 of the License, or\n" + \
+        "(at your option) any later version.\n\n" + \
+        "This program is distributed in the hope that it will be useful,\n" + \
+        "but WITHOUT ANY WARRANTY; without even the implied warranty of\n" + \
+        "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n" + \
+        "GNU General Public License for more details.\n\n" + \
+        "You should have received a copy of the GNU General Public License\n" + \
+        "along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+        
+        gpl = Label(aframe, text=gnutext, anchor=W, justify=LEFT)
+        gpl.pack()
+
+        ok = Button(aframe, text='OK', width=6, command=about.destroy, bd=3, pady=3)  
+        ok.pack()
+
+    def setRuleset(self):
+        # popup code
+        rsets = Tk()
+        ##  make a  window that is not resizable & disable the maximize button
+        rsets.resizable(width=FALSE, height=FALSE)
+        rsets.geometry('320x240+5+150')
+        # changing the default icon in a Tkinter window
+        rsets.wm_iconbitmap("@@./data/glider.xbm")
+        # give the window a title
+        rsets.title("Interesting Rulesets") 
+
+        self.listbox = Listbox(rsets)
+        self.listbox.pack(fill='both', expand=1)
+
+        for rule in self.rulesets:
+            self.listbox.insert(END, rule)
+
+        select = Button(rsets, text='Select', command=self.setRule, width=8, bd=3, pady=3)  
+        select.pack()
+
+        select = Button(rsets, text='Close', command=rsets.destroy, width=8, bd=3, pady=3)  
+        select.pack()
+
+    def setRule(self):
+        temp_sel = self.listbox.curselection()
+        if temp_sel == ():
+            self.ruleset.set(self.rulesetdict['0'])
+        else:
+            sel = temp_sel[0]
+            self.ruleset.set(self.rulesetdict[sel])
+        
+def handler():
+    root.quit()
+
+root = Tk()
+root.geometry('320x200+5+430')
+##  make a  window that is not resizable & disable the maximize button
+#root.resizable(width=FALSE, height=FALSE)
+
+# changing the default icon in a Tkinter window
+root.wm_iconbitmap("@@./data/glider.xbm")
+#root.wm_iconbitmap("@@/usr/include/X11/bitmaps/escherknot")
+
+# give the window a title
+root.title("Mylife.py Start Program")
+
+# keep a window always on top
+root.wm_attributes('-topmost', 1)
+
+root.protocol("WM_DELETE_WINDOW", handler)
+# or toplevel.protocol(...
+
+app = LifeControl(root)
+root.mainloop()
+
+@
+
+
+1.16
+log
+@Added listbox ruleset selection.
+@
+text
+@d34 1
+a34 1
+__version__ = "$Id: lcp.py,v 1.15 2009/08/12 23:28:03 mikey Exp mikey $"
+d186 2
+a224 1
+        rsets.geometry('320x240+5+150')
+d227 1
+@
+
+
+1.15
+log
+@Tweaked about function.
+Tweaked menus.
+@
+text
+@d34 1
+a34 1
+__version__ = "$Id: lcp.py,v 1.14 2009/08/12 22:57:12 mikey Exp mikey $"
+d48 10
+d72 1
+a72 1
+        configmenu.add_command(label="Rulesets", command=self.showRulesets)
+a75 1
+        #helpmenu.add_command(label="Rulesets", command=self.showRulesets)
+a138 6
+        #self.label1 = Label(frame2, text='2009 mlg@@BSCF')
+        #self.label1.pack(side='bottom')
+    
+    #def showStep(self):
+    #    print self.stepval.get()
+
+a173 1
+                #print cmd
+a177 1
+                #print cmd
+d220 22
+a241 16
+    def showRulesets(self):
+        ver_info = __version__.split()
+        #print ver_info
+        pgm = ver_info[1][:-2]
+        msg = "Interesting Rule Sets:\n\n" + \
+        "B3/S23 Conway's Life " + '\n' + \
+        "B36/S23 Highlife" + '\n' + \
+        "B3678/S34678 Day & Night" + '\n' \
+        "B3/S012345678 Life Without Death" + '\n' \
+        "B1357/S1357 Replicator" + '\n' \
+        "B1/S1 Gnarl" + '\n' \
+        "B2/S Seeds" + '\n' \
+        "B3/S12345 Maze" + '\n' \
+        "B234/S Serviettes" + '\n' \
+        "B345/S5 Long Life" 
+        tkMessageBox.showinfo(pgm, msg)
+d243 8
+a251 1
+    #if tkMessageBox.askokcancel("Quit?", "Are you sure you want to quit?"):
+d255 1
+a255 1
+root.geometry('320x200+5+250')
+a271 7
+## popup code
+#about = Tk()
+## changing the default icon in a Tkinter window
+#about.wm_iconbitmap("@@./data/glider.xbm")
+## give the window a title
+#about.title("About lcp.py")
+
+@
+
+
+1.14
+log
+@Changed about popup to show GPL 3.
+@
+text
+@d34 1
+a34 1
+__version__ = "$Id: lcp.py,v 1.13 2009/08/12 21:52:06 mikey Exp mikey $"
+a56 2
+        filemenu.add_command(label="Config", command=self.runEditor)
+        filemenu.add_separator()
+d60 5
+d66 1
+a66 1
+        helpmenu.add_command(label="Rulesets", command=self.showRulesets)
+d193 19
+a211 38
+        line1 = Label(aframe, text=pgm)
+        line1.pack()
+
+        line2 = Label(aframe, text='Version '+ver_info[2])
+        line2.pack()
+
+        line3 = Label(aframe, text='GUI program to launch mylife.py.')
+        line3.pack()
+
+        line4 = Label(aframe, text="myife.py is yet another Conway's Game of Life program.")
+        line4.pack()
+
+        line5 = Label(aframe, text=" ")
+        line5.pack()
+
+        line6 = Label(aframe, text='lcp.py Copyright (C) 2009 Michael Lee Goldberg')
+        line6.pack()
+
+        line7 = Label(aframe, text=" ")
+        line7.pack()
+
+        line8 = Label(aframe, text="This program is free software: you can redistribute it and/or modify")
+        line8.pack()
+
+        line9 = Label(aframe, text="it under the terms of the GNU General Public License as published by")
+        line9.pack()
+
+        line10 = Label(aframe, text="the Free Software Foundation, either version 3 of the License, or")
+        line10.pack()
+
+        line11 = Label(aframe, text="(at your option) any later version.")
+        line11.pack()
+
+        line12 = Label(aframe, text=" ")
+        line12.pack()
+
+        line13 = Label(aframe, text="This program is distributed in the hope that it will be useful,")
+        line13.pack()
+d213 2
+a214 17
+        line14 = Label(aframe, text="but WITHOUT ANY WARRANTY; without even the implied warranty of")
+        line14.pack()
+
+        line15 = Label(aframe, text="MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the")
+        line15.pack()
+        
+        line16 = Label(aframe, text="GNU General Public License for more details.")
+        line16.pack()
+
+        line17 = Label(aframe, text=" ")
+        line17.pack()
+
+        line18 = Label(aframe, text="You should have received a copy of the GNU General Public License")
+        line18.pack()
+
+        line19 = Label(aframe, text="along with this program.  If not, see <http://www.gnu.org/licenses/>.")
+        line19.pack()
+@
+
+
+1.13
+log
+@Changed licensing to GPL 3.
+@
+text
+@d34 1
+a34 1
+__version__ = "$Id: lcp.py,v 1.12 2009/08/11 01:21:04 mikey Exp mikey $"
+a42 3
+#def hello():
+#    print "hello!"
+
+d95 2
+a96 1
+        self.r3 = Radiobutton(self.frame1, text="B3/S23 Conway's life",width=20,\
+d100 2
+a101 1
+        self.r4 = Radiobutton(self.frame1, text="Input ruleset:           ",width=20,\
+a177 1
+        #print ver_info
+d179 70
+a248 5
+        msg = "mylife.py control program\n" + \
+        "Version " + ver_info[2] + '\n' + \
+        ver_info[3] + '\n' + \
+        "Mike Goldberg"
+        tkMessageBox.showinfo(pgm, msg)
+a281 1
+#root.config(bg='white')
+d289 6
+@
+
+
+1.12
+log
+@Remove debug print ststements.
+@
+text
+@d15 14
+a28 2
+This code is under the GNU public license, the version of GPL is
+your choice.
+a29 1
+copyleft 2009 Blue Sun Collective Farm
+d34 1
+a34 1
+__version__ = "$Id: lcp.py,v 1.11 2009/08/11 01:17:57 mikey Exp mikey $"
+d56 1
+a56 1
+        filemenu = Menu(menubar, tearoff=0)
+@
+
+
+1.11
+log
+@Tweak UI.
+@
+text
+@d23 1
+a23 1
+__version__ = "$Id: lcp.py,v 1.10 2009/08/11 00:07:49 mikey Exp mikey $"
+d32 2
+a33 2
+def hello():
+    print "hello!"
+d158 1
+a158 1
+                print cmd
+d163 1
+a163 1
+                print cmd
+d168 1
+a168 1
+        print ver_info
+d178 1
+a178 1
+        print ver_info
+@
+
+
+1.10
+log
+@Major changes:
+1. Moved many items from buttons to pull down menus.
+2. Added an About popup.
+3. Added an interesting rulesets.
+@
+text
+@d23 1
+a23 1
+__version__ = "$Id: lcp.py,v 1.9 2009/08/04 18:58:04 mikey Exp mikey $"
+d60 1
+a60 1
+        root.config(menu=menubar)
+d62 1
+a62 1
+        self.frame1 = Frame(master)
+a64 1
+        
+d75 1
+a75 1
+        self.label4 = Label(self.frame1, text="    Ruleset  ",\
+d83 1
+d89 1
+a89 1
+        self.r3.grid(row=3, column=0)
+d93 1
+a93 1
+        self.r4.grid(row=4, column=0)
+d111 1
+a111 1
+        self.r1.grid(row=3, column=1)
+d114 1
+a114 1
+        self.r2.grid(row=4, column=1)
+d198 1
+a198 1
+root.geometry('310x200+5+250')
+@
+
+
+1.9
+log
+@Changed window icon & cleaned up code.
+@
+text
+@d23 1
+a23 1
+__version__ = "$Id: lcp.py,v 1.8 2009/08/04 18:32:09 mikey Exp mikey $"
+d32 3
+a40 2
+        frame1 = Frame(master)
+        frame1.pack(side="left")
+d42 41
+a82 5
+        #  display an image in a canvas
+        #self.canvas1 = Canvas(frame1, width=140, height=140)
+        #self.img = PhotoImage(file='./data/140px-Glider.gif')
+        #self.canvas1.create_image(0,0, image=self.img, anchor=NW)
+        #self.canvas1.pack()
+d84 2
+a85 2
+        self.label4 = Label(frame1, textvariable=self.ruleset, fg='red')
+        self.label4.pack(side='top')
+d87 1
+a87 1
+        self.r3 = Radiobutton(frame1, text="B3/S23 Conway's life",width=20,\
+d89 3
+a91 3
+        self.r3.pack(side='top')
+        
+        self.r4 = Radiobutton(frame1, text="Input ruleset:           ",width=20,\
+d93 1
+a93 1
+        self.r4.pack(side='top')
+d97 2
+a98 2
+        self.entry1 = Entry(frame1)
+        self.entry1.pack(side='top')
+d100 3
+a102 7
+        self.btn5 = Button(frame1, text="Set rules", width=10,
+        command=self.retrieveRuleset, bd=3)
+        self.btn5.pack(side='top', pady=3)
+
+        self.btn3 = Button(frame1, text="Config", width=6,
+        command=self.runEditor, bd=3)
+        self.btn3.pack(side='top', pady=3)
+a103 2
+        frame2 = Frame(master)
+        frame2.pack(side="left")
+d105 2
+a106 7
+        self.label2 = Label(frame2, text="Start pattern:")
+        self.label2.pack(side='top')
+
+        self.lifeform = StringVar()
+        self.lifeform.set('random')
+        self.label3 = Label(frame2, textvariable=self.lifeform, fg='red')
+        self.label3.pack(side='top')
+a107 7
+        self.btn1 = Button(frame2, text="Load", width=6,
+        command=self.choose_file, bd=3)
+        self.btn1.pack(side='top')
+
+        self.btn2 = Button(frame2, text="Run", width=6,
+        command=self.runLife,bd=3)
+        self.btn2.pack(side='top', pady=3)
+d109 1
+a109 1
+        self.r1 = Radiobutton(frame2, text='Single step',width=11,\
+d111 2
+a112 2
+        self.r1.pack(side='top')
+        self.r2 = Radiobutton(frame2, text='Continuous',width=11,\
+d114 1
+a114 1
+        self.r2.pack(side='top')
+d117 2
+a118 7
+        
+        self.btn4 = Button(frame2, text="Quit", width=6,
+        command=handler, bd=3)
+        self.btn4.pack(side='top')
+
+        self.label1 = Label(frame1, text='2009 mlg@@BSCF')
+        self.label1.pack(side='bottom')
+d166 27
+d194 2
+a195 2
+    if tkMessageBox.askokcancel("Quit?", "Are you sure you want to quit?"):
+        root.quit()
+d198 1
+a198 1
+root.geometry('310x220+20+250')
+d200 1
+a200 1
+root.resizable(width=FALSE, height=FALSE)
+d207 1
+a207 1
+root.title("Life Control Program")
+@
+
+
+1.8
+log
+@Tweaked ui.
+Ruleset is now a textvariable.
+Cleaned up cruft, mostly debug print statements.
+@
+text
+@d23 1
+a23 1
+__version__ = "$Id: lcp.py,v 1.7 2009/08/04 17:32:06 mikey Exp mikey $"
+d42 4
+a45 4
+        self.canvas1 = Canvas(frame1, width=140, height=140)
+        self.img = PhotoImage(file='./data/140px-Glider.gif')
+        self.canvas1.create_image(0,0, image=self.img, anchor=NW)
+        self.canvas1.pack()
+d59 1
+a59 1
+        
+d65 1
+a65 2
+        self.btn5.pack(side='top')
+
+d67 3
+d98 1
+a98 4
+        self.btn3 = Button(frame2, text="Config", width=6,
+        command=self.runEditor, bd=3)
+        self.btn3.pack(side='top', pady=3)
+
+d157 1
+a157 1
+root.geometry('360x290+20+250')
+d162 1
+a162 1
+root.wm_iconbitmap("@@./data/bsun1")
+@
+
+
+1.7
+log
+@Major changes:
+added ruleset input radio buttons and text entry box.
+Implement code to run selected ruleset.
+@
+text
+@d23 1
+a23 1
+__version__ = "$Id: lcp.py,v 1.6 2009/07/31 23:29:27 mikey Exp mikey $"
+d36 2
+a37 1
+        self.ruleset = 'B3/S23'
+d47 1
+a47 1
+        self.label4 = Label(frame1, text='Ruleset:')
+a83 1
+        #filename = label3.text
+a103 1
+        #self.label1 = Label(frame2, text='2009 Blue Sun Collective Farm')
+a110 1
+        print 'self.rules.get() =', self.rules.get()
+d112 2
+a113 3
+            print 'self.rules =', self.rules
+            self.ruleset = self.entry1.get()
+            self.ruleset = self.ruleset.upper()
+d115 1
+a115 3
+            self.ruleset = 'B3/S23'
+        # really need to test for valid ruleset here!!!
+        print self.ruleset
+a133 2
+        print 'self.lifeform: ', self.lifeform
+        print 'self.lifeform.get(): ', self.lifeform.get() 
+d137 1
+a137 1
+                self.ruleset + '&'
+d139 1
+a139 1
+                cmd = 'python ./mylife.py -r -R' + self.ruleset + '&'
+d144 1
+a144 1
+                ' -R ' + self.ruleset + ' &'
+d149 1
+a149 1
+                ' -R ' + self.ruleset + ' &'
+d158 1
+a158 1
+root.geometry('300x290+20+250')
+a179 8
+
+
+
+
+
+
+
+
+@
+
+
+1.6
+log
+@Tweak gui display. (Lined up radiobuttons.)
+@
+text
+@d23 1
+a23 1
+__version__ = "$Id: lcp.py,v 1.5 2009/07/31 23:24:16 mikey Exp mikey $"
+d35 2
+d46 22
+d75 1
+a75 1
+        self.lifeform.set('random.lif')
+d111 11
+d139 3
+a141 1
+        if self.lifeform.get() == 'random.lif':
+d143 2
+a144 1
+                cmd = 'python ./mylife.py -s -r &'
+d146 1
+a146 1
+                cmd = 'python ./mylife.py -r &'
+d149 4
+a152 1
+                cmd = 'python ./mylife.py -s -f ' + self.lifeform.get() + ' &'
+d154 4
+a157 1
+                cmd = 'python ./mylife.py -f ' + self.lifeform.get() + ' &'
+d165 1
+a165 1
+root.geometry('250x240+20+250')
+@
+
+
+1.5
+log
+@Implemented single step/continuous radio buttons.
+@
+text
+@d23 1
+a23 1
+__version__ = "$Id: lcp.py,v 1.4 2009/07/27 16:35:51 mikey Exp mikey $"
+d67 1
+a67 1
+        self.r2 = Radiobutton(frame2, text='Continuous ',width=11,\
+d121 1
+a121 1
+root.geometry('280x240+20+250')
+@
+
+
+1.4
+log
+@Moved '2009 mlg@@BSCF' label.
+@
+text
+@d23 1
+a23 1
+__version__ = "$Id: lcp.py,v 1.3 2009/07/27 15:19:05 mikey Exp mikey $"
+d34 1
+d64 8
+d84 3
+d105 4
+a108 1
+            cmd = 'python ./mylife.py -r &'
+d110 4
+a113 1
+            cmd = 'python ./mylife.py -f ' + self.lifeform.get() + ' &'
+d121 1
+a121 2
+
+root.geometry('250x210+20+250')
+@
+
+
+1.3
+log
+@Added 'Config' button = open gedit on .myliferc configuration file.
+@
+text
+@d23 1
+a23 1
+__version__ = "$Id: lcp.py,v 1.2 2009/07/23 23:10:16 mikey Exp mikey $"
+d34 1
+a34 1
+        frame1 = Frame(master,bg='white')
+d72 2
+a73 2
+        self.label1 = Label(frame2, text='2009 mlg@@BSCF')
+        self.label1.pack(side='right')
+@
+
+
+1.2
+log
+@Changed so that mylife.py runs in the background.
+@
+text
+@d23 1
+a23 1
+__version__ = "$Id: lcp.py,v 1.1 2009/07/23 23:05:35 mikey Exp mikey $"
+d54 1
+a54 1
+        self.btn1 = Button(frame2, text="Load", width=4,
+d59 1
+a59 1
+        self.btn2 = Button(frame2, text="Run", width=4,
+d63 5
+a67 1
+        self.btn3 = Button(frame2, text="Quit", width=4,
+d69 1
+a69 1
+        self.btn3.pack(side='top')
+d75 4
+d104 1
+a104 1
+root.geometry('250x175+20+250')
+@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@d23 1
+a23 1
+__version__ = "$Id$"
+d85 1
+a85 1
+            cmd = 'python ./mylife.py -r'
+d87 1
+a87 1
+            cmd = 'python ./mylife.py -f ' + self.lifeform.get()
+@

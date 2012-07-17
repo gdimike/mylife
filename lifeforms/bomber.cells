@@ -1,0 +1,12 @@
+! Discoverer: Nathan Thompson
+! Name: Bomber
+! From the paper "HighLife - An Interesting Variant of Life".
+! http://members.pcug.org.au/~dbell/
+! Use Highlife (B36/S23) ruleset.
+.OOO......
+O.........
+O.........
+O........O
+.........O
+.........O
+
