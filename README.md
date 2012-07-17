@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+mylife
+
 A set cellular automation programs, witten in Pygame.
 
 "mylife.py"   runs the cellular automatons through their paces.
@@ -12,4 +13,3 @@ mylife
 ======
 
 A set of cellular automation programs written in Python and Pygame.
->>>>>>> 90ffb14a9dbd6fcffe1bf0dac646b53efa1c9008
